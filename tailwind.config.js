@@ -4,7 +4,11 @@ module.exports = {
     extend: {
       colors: {
         'background-main': '#111111',
-        'accent-main': '#9d9d9d',
+        accent: {
+          main: '#65737e',
+          active: '#4f5b66',
+          disabled: '#343d46',
+        },
       },
       fontFamily: {
         body: "'Nunito Sans', sans-serif",
