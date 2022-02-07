@@ -8,15 +8,18 @@ const Home: NextPage = () => {
   const states = useContext(context);
 
   return (
-    <div className="h-screen w-screen bg-background-main">
-      <div className="mx-auto w-10/12 py-12">
-        <Button>test button</Button>
-        <Button outline>test button</Button>
-        <Button disabled>test button</Button>
-        <Button outline disabled>
-          test button
-        </Button>
-        <Input placeholder="Enter your name..." type="text" centered state={states.name} />
+    <div className="h-screen min-h-fit w-screen bg-background-main">
+      <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
+        <div className="mx-auto h-48 w-10/12 py-12 text-center">
+          <h1 className="text-3xl font-extrabold text-white">SETLIST MAKER</h1>
+          <span className="text-white">By @coldplayxtra</span>
+        </div>
+        <div className="mx-auto w-10/12 pb-12">
+          <h2 className="text-center text-2xl font-bold text-white">STEP 1</h2>
+          <Input className="" placeholder="Enter your name..." type="text" centered state={states.name} />
+          <Button outline>Get started</Button>
+        </div>
+        <div className="row-span-4 mx-auto h-auto w-10/12 rounded-t-xl bg-white bg-opacity-10"></div>
       </div>
     </div>
   );
