@@ -17,7 +17,7 @@ export default function Button(props: PropsWithChildren<Props>) {
   return (
     <button
       disabled={props.disabled}
-      className={`${color} my-4 block w-full min-w-min select-none rounded-xl p-3 font-body font-extrabold text-white transition-colors`}
+      className={`${color} my-4 block w-full min-w-min rounded-xl p-3 font-body font-extrabold text-white transition-colors`}
     >
       {props.children}
     </button>
