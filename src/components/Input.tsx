@@ -5,6 +5,7 @@ type Props = {
   placeholder?: string;
   centered?: boolean;
   type?: string;
+  className?: string;
 };
 
 export default function Input(props: Props) {
@@ -16,7 +17,7 @@ export default function Input(props: Props) {
       value={state}
       type={props.type || 'text'}
       placeholder={props.placeholder}
-      className={`${
+      className={`${props.className} ${
         props.centered ? 'text-center placeholder:text-center' : ''
       } my-4 block w-full min-w-min rounded-xl bg-accent-main p-3 font-body font-extrabold text-white placeholder:text-gray-300 active:bg-accent-active`}
     />

@@ -3,6 +3,7 @@ import React, { PropsWithChildren } from 'react';
 type Props = {
   outline?: boolean;
   disabled?: boolean;
+  className?: string;
 };
 
 export default function Button(props: PropsWithChildren<Props>) {
@@ -17,7 +18,7 @@ export default function Button(props: PropsWithChildren<Props>) {
   return (
     <button
       disabled={props.disabled}
-      className={`${color} my-4 block w-full min-w-min rounded-xl p-3 font-body font-extrabold text-white transition-colors`}
+      className={`${props.className} ${color} my-4 block w-full min-w-min rounded-xl p-3 font-body font-extrabold text-white transition-colors`}
     >
       {props.children}
     </button>
