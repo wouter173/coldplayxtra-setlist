@@ -1,10 +1,13 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import { Provider } from '../context/State';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Component {...pageProps} />
+      <Provider>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }
