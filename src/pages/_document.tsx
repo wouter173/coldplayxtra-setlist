@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
         <title>Setlist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="theme-color" content="#111111" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -1,14 +1,15 @@
-import React, { useContext, useState } from 'react';
-import { DotsVerticalIcon } from '@heroicons/react/solid';
+import React, { Dispatch, useContext, useState } from 'react';
 import Header from '../components/Header';
 import Modal from '../components/Modal';
 import Selector from '../components/Selector';
 import { context, songType, stageType } from '../context/State';
-import { addSong, addStage, setSong } from '../utils/editorMethods';
+import { addStage } from '../utils/editorMethods';
+import SongContext from '../context/SongContext';
+import StageHeader from '../components/StageHeader';
 
 export default function Editor() {
   const [modalHidden, setModalHidden] = useState(false);
-  const [stages, setStages] = useContext(context).stages;
+  const [stages, setStages] = useContext(context).stages as [stageType[], Dispatch<stageType[]>];
 
   return (
     <div className="bg-main h-fit min-h-min w-screen">
@@ -20,24 +21,14 @@ export default function Editor() {
             press save when you’re done.
           </Modal>
           <ul>
-            {stages.map((stage: stageType) => (
-              <li key={stage.name}>
-                <div className="my-2 flex items-center">
-                  <h2 className="ml-2 text-sm font-bold uppercase underline">{stage.name}</h2>
-                  <DotsVerticalIcon className="ml-auto h-6 w-6 text-gray-400" />
-                </div>
+            {stages.map((stage: stageType, stageIndex: number) => (
+              <li key={stage.id}>
+                <StageHeader stage={stage} />
                 <ul>
-                  {stage.songs.map((song: songType, i: number) => (
-                    <Selector
-                      key={i}
-                      value={song.name}
-                      index={i}
-                      setSong={(songName) => setSong({ stages, setStages, songName, i, stage })}
-                      last={i == stage.songs.length - 1}
-                      onFocus={() => {
-                        addSong({ stages, setStages, i, stage });
-                      }}
-                    ></Selector>
+                  {stage.songs.map((song: songType, songIndex: number) => (
+                    <SongContext.Provider value={{ i: songIndex, song, setStages, stages, stage }} key={song.id}>
+                      <Selector last={songIndex == stage.songs.length - 1 && stageIndex == stages.length - 1} />
+                    </SongContext.Provider>
                   ))}
                 </ul>
               </li>
