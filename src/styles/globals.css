@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-main {
+  background: linear-gradient(180deg, rgba(0, 133, 255, 0) 0%, rgba(202, 11, 250, 0.2) 64.35%), #111111;
+}

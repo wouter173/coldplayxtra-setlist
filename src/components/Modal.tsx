@@ -1,5 +1,4 @@
 import React, { PropsWithChildren } from 'react';
-import Button from './Button';
 
 type Props = {
   hidden?: boolean;
@@ -11,13 +10,13 @@ export default function Modal(props: PropsWithChildren<Props>) {
     <div
       className={`${
         props.hidden ? 'hidden' : ''
-      } grid h-auto w-full rounded-xl bg-accent-disabled bg-opacity-40 p-4 font-bold text-white`}
+      } mb-10 grid h-auto w-full rounded-xl bg-secondary-blue p-6 text-sm font-bold text-[#4F4F4F]`}
     >
       {props.children}
       <div>
-        <Button onClick={props.onDismiss} className="float-right mb-0 w-fit">
-          Let{"'"}s go
-        </Button>
+        <span onClick={props.onDismiss} className="float-left mb-0 mt-4 w-fit cursor-pointer text-[#9B51E0]">
+          OKAY
+        </span>
       </div>
     </div>
   );

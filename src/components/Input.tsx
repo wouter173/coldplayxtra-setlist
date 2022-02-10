@@ -19,7 +19,7 @@ export default function Input(props: Props) {
       placeholder={props.placeholder}
       className={`${props.className} ${
         props.centered ? 'text-center placeholder:text-center' : ''
-      } my-4 block w-full min-w-min rounded-xl bg-accent-main p-3 font-body font-extrabold text-white placeholder:text-gray-300 active:bg-accent-active`}
+      } my-4 block w-full min-w-min rounded-none border-b-2 border-accent-main bg-transparent p-3 font-body text-3xl font-extrabold uppercase text-white placeholder:text-gray-300`}
     />
   );
 }

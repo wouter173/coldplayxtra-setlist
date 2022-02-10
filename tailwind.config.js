@@ -3,11 +3,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background-main': '#111111',
         accent: {
-          main: '#65737e',
+          main: '#631177',
           active: '#4f5b66',
           disabled: '#343d46',
+        },
+        secondary: {
+          purple: '#B3AAB8',
+          blue: '#E5E5FF',
         },
       },
       fontFamily: {
