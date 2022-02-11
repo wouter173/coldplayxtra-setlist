@@ -1,13 +1,16 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Provider } from '../context/State';
+import { Provider as StateProvider } from '../context/State';
+import { Provider as OverlayProvider } from '../context/OverlayContext';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Provider>
-        <Component {...pageProps} />
-      </Provider>
+      <StateProvider>
+        <OverlayProvider>
+          <Component {...pageProps} />
+        </OverlayProvider>
+      </StateProvider>
     </>
   );
 }

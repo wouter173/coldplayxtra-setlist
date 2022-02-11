@@ -6,6 +6,7 @@ import { context, songType, stageType } from '../context/State';
 import { addStage } from '../utils/editorMethods';
 import SongContext from '../context/SongContext';
 import StageHeader from '../components/StageHeader';
+import { OverlayRenderer } from '../components/Overlay';
 
 export default function Editor() {
   const [modalHidden, setModalHidden] = useState(false);
@@ -13,9 +14,10 @@ export default function Editor() {
 
   return (
     <div className="bg-main h-fit min-h-min w-screen">
+      <OverlayRenderer />
       <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content' }}>
         <Header />
-        <div className="row-span-4 mx-auto h-auto w-full bg-white px-4 py-10">
+        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10">
           <Modal hidden={modalHidden} onDismiss={() => setModalHidden(true)}>
             Reorder, add, edit, delete add special effecs Lorem ipsum instructions for how you can do your setlist here,
             press save when you’re done.

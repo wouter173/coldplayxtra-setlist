@@ -22,10 +22,10 @@ export const setSong = (args: argsType<{ songName: string; i: number; stage: sta
 export const addSong = ({ setStages, stages, stage }: argsType<{ i: number; stage: stageType }>) => {
   const newStages: stageType[] = [...stages];
   const stageIndex = getStage(stages, stage.id);
-  newStages[stageIndex].songs.push({ name: '' });
+  newStages[stageIndex].songs.push({ id: GenerateID(), name: '' });
   setStages(newStages);
 };
 
 export const addStage = ({ stages, setStages }: argsType) => {
-  setStages([...stages, { id: GenerateID(), name: 'new stage', songs: [{ name: '' }] }]);
+  setStages([...stages, { id: GenerateID(), name: 'new stage', songs: [{ id: GenerateID(), name: '' }] }]);
 };

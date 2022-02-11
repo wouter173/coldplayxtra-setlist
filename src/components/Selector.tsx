@@ -1,16 +1,63 @@
 import React, { ChangeEvent, useContext, useState } from 'react';
-import { ArrowSmDownIcon, ArrowSmUpIcon, DotsVerticalIcon } from '@heroicons/react/solid';
+import {
+  ArrowSmDownIcon,
+  ArrowSmUpIcon,
+  DotsVerticalIcon,
+  GlobeAltIcon,
+  PlusCircleIcon,
+  SortAscendingIcon,
+  SortDescendingIcon,
+} from '@heroicons/react/outline';
 import AutoComplete from './AutoComplete';
 import SongContext, { songContextDataType } from '../context/SongContext';
 import { setSong, addSong } from '../utils/editorMethods';
+import Menu, { menuItemType } from './Menu';
 
 interface Props {
   last?: boolean;
 }
 
+const menuItems: menuItemType[] = [
+  {
+    Icon: PlusCircleIcon,
+    name: 'ADD CUSTOM INFO',
+    action: () => {
+      console.log('custom info');
+    },
+  },
+  {
+    Icon: SortAscendingIcon,
+    name: 'ADD SONG ABOVE',
+    action: () => {
+      console.log('song above');
+    },
+  },
+  {
+    Icon: SortDescendingIcon,
+    name: 'ADD SONG BELOW',
+    action: () => {
+      console.log('song below');
+    },
+  },
+  {
+    Icon: GlobeAltIcon,
+    name: 'CHANGE STAGE',
+    action: () => {
+      console.log('change stage');
+    },
+  },
+  {
+    name: 'REMOVE',
+    action: () => {
+      console.log('remove');
+    },
+  },
+];
+
 export default function Selector(props: Props) {
   const { stage, stages, setStages, i, song } = useContext(SongContext) as songContextDataType;
-  const [focussed, setFocus] = useState<boolean>(false);
+  const [inputFocus, setInputFocus] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
     <li className={`${props.last ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center gap-2 py-1`}>
@@ -25,18 +72,21 @@ export default function Selector(props: Props) {
           }}
           onBlur={() => {
             console.log('aa');
-            setFocus(false);
+            setInputFocus(false);
           }}
           onFocus={() => {
-            setFocus(true);
+            setInputFocus(true);
             if (props.last) addSong({ stages, setStages, i, stage });
           }}
         />
-        {focussed ? <AutoComplete /> : <></>}
+        {inputFocus ? <AutoComplete /> : <></>}
       </div>
       <ArrowSmUpIcon className="h-6 w-6 flex-shrink-0 text-gray-600" />
       <ArrowSmDownIcon className="h-6 w-6 flex-shrink-0 text-gray-600" />
-      <DotsVerticalIcon className="h-6 w-6 flex-shrink-0 text-gray-400" />
+      <div className="relative h-6 w-6 flex-shrink-0">
+        <DotsVerticalIcon className="h-6 w-6 text-gray-400" onClick={() => setMenuOpen(true)} />
+        {menuOpen ? <Menu items={menuItems} onBlur={() => setMenuOpen(false)} /> : null}
+      </div>
     </li>
   );
 }
