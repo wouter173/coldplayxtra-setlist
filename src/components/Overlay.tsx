@@ -30,6 +30,9 @@ export default function Overlay(props: OverlayProps) {
       setActive(false);
       props.action();
     });
+    return () => {
+      setActive(false);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

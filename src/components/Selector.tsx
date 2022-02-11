@@ -17,47 +17,49 @@ interface Props {
   last?: boolean;
 }
 
-const menuItems: menuItemType[] = [
-  {
-    Icon: PlusCircleIcon,
-    name: 'ADD CUSTOM INFO',
-    action: () => {
-      console.log('custom info');
-    },
-  },
-  {
-    Icon: SortAscendingIcon,
-    name: 'ADD SONG ABOVE',
-    action: () => {
-      console.log('song above');
-    },
-  },
-  {
-    Icon: SortDescendingIcon,
-    name: 'ADD SONG BELOW',
-    action: () => {
-      console.log('song below');
-    },
-  },
-  {
-    Icon: GlobeAltIcon,
-    name: 'CHANGE STAGE',
-    action: () => {
-      console.log('change stage');
-    },
-  },
-  {
-    name: 'REMOVE',
-    action: () => {
-      console.log('remove');
-    },
-  },
-];
-
 export default function Selector(props: Props) {
   const { stage, stages, setStages, i, song } = useContext(SongContext) as songContextDataType;
   const [inputFocus, setInputFocus] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  const menuItems: menuItemType[] = [
+    {
+      Icon: PlusCircleIcon,
+      name: 'ADD CUSTOM INFO',
+      action: () => {
+        console.log('custom info');
+      },
+    },
+    {
+      Icon: SortAscendingIcon,
+      name: 'ADD SONG ABOVE',
+      action: () => {
+        addSong({ stages, setStages, i, stage });
+        setMenuOpen(false);
+      },
+    },
+    {
+      Icon: SortDescendingIcon,
+      name: 'ADD SONG BELOW',
+      action: () => {
+        addSong({ stages, setStages, i: i + 1, stage });
+        setMenuOpen(false);
+      },
+    },
+    {
+      Icon: GlobeAltIcon,
+      name: 'CHANGE STAGE',
+      action: () => {
+        console.log('change stage');
+      },
+    },
+    {
+      name: 'REMOVE',
+      action: () => {
+        console.log('remove');
+      },
+    },
+  ];
 
   return (
     <li className={`${props.last ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center gap-2 py-1`}>
@@ -76,7 +78,7 @@ export default function Selector(props: Props) {
           }}
           onFocus={() => {
             setInputFocus(true);
-            if (props.last) addSong({ stages, setStages, i, stage });
+            if (props.last) addSong({ stages, setStages, i: i + 1, stage });
           }}
         />
         {inputFocus ? <AutoComplete /> : <></>}

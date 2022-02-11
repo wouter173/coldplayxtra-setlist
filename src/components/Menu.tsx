@@ -20,11 +20,11 @@ export default function Menu(props: Props) {
         {props.items.map((item, i) => {
           const last = i == props.items.length - 1;
           return (
-            <li
-              key={item.name}
-              className={`${!last ? 'border-b text-gray-500' : 'text-red-500'} flex border-gray-200 py-4 px-2`}
-            >
-              <button className="flex h-full w-full items-center justify-end text-sm font-bold">
+            <li key={item.name} className={`${!last ? 'border-b text-gray-500' : 'text-red-500'} flex border-gray-200`}>
+              <button
+                className="flex h-full w-full items-center justify-end py-4 px-2 text-sm font-bold"
+                onClick={item.action}
+              >
                 {item.name}
                 {item.Icon ? item.Icon({ className: 'ml-4 h-6 w-6' }) : null}
               </button>

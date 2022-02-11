@@ -19,10 +19,10 @@ export const setSong = (args: argsType<{ songName: string; i: number; stage: sta
   args.setStages(newStages);
 };
 
-export const addSong = ({ setStages, stages, stage }: argsType<{ i: number; stage: stageType }>) => {
+export const addSong = ({ setStages, stages, stage, i }: argsType<{ i: number; stage: stageType }>) => {
   const newStages: stageType[] = [...stages];
   const stageIndex = getStage(stages, stage.id);
-  newStages[stageIndex].songs.push({ id: GenerateID(), name: '' });
+  newStages[stageIndex].songs.splice(i, 0, { id: GenerateID(), name: '' });
   setStages(newStages);
 };
 
