@@ -8,7 +8,7 @@ const context = createContext<{
 } | null>(null);
 
 export const Provider = (props: PropsWithChildren<{}>) => {
-  const children = useState<ReactNode>(null);
+  const children = useState<ReactNode>(() => <></>);
   const active = useState(false);
   const title = useState('');
   const dismiss = useState<() => void>(() => {});

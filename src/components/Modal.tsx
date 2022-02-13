@@ -1,11 +1,11 @@
 import { XIcon } from '@heroicons/react/outline';
-import React, { PropsWithChildren, useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ModalContext from '../context/ModalContext';
 import Overlay from './Overlay';
 
 export function ModalRenderer() {
   const {
-    children: [children],
+    children: [Children],
     title: [title],
     active: [active],
     dismiss: [dismiss],
@@ -21,14 +21,14 @@ export function ModalRenderer() {
               <XIcon className="ml-20 h-8 w-8 text-[#BB6BD9]" />
             </button>
           </div>
-          {children}
+          {Children}
         </div>
       </div>
     );
   else return null;
 }
 
-const Modal = (props: PropsWithChildren<{ title: string; onDismiss: () => void }>) => {
+const Modal = (props: { title: string; onDismiss: () => void; component: JSX.Element }) => {
   const {
     active: [, setActive],
     children: [, setChildren],
@@ -38,7 +38,7 @@ const Modal = (props: PropsWithChildren<{ title: string; onDismiss: () => void }
 
   useEffect(() => {
     setActive(true);
-    setChildren(props.children);
+    setChildren(props.component);
     setTitle(props.title);
     setDismiss(() => props.onDismiss);
 

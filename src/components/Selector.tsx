@@ -1,4 +1,4 @@
-import React, { ChangeEvent, Dispatch, useContext, useState } from 'react';
+import React, { ChangeEvent, useContext, useState } from 'react';
 import {
   ArrowSmDownIcon,
   ArrowSmUpIcon,
@@ -14,7 +14,7 @@ import SongContext, { songContextDataType } from '../context/SongContext';
 import { setSong, addSong, removeSong, moveSong } from '../utils/editorMethods';
 import Menu, { menuItemType } from './Menu';
 import Modal from './Modal';
-import { songType } from '../context/State';
+import CustomInfoModal from './Modals/CustomInfoModal';
 
 interface Props {
   last?: boolean;
@@ -67,12 +67,18 @@ export default function Selector(props: Props) {
   return (
     <li className={`${props.last ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
       {modalOpen ? (
-        <CustomInfoModal
-          song={song}
-          modalOpen={[modalOpen, setModalOpen]}
-          onSubmit={(out) => {
-            setSong({ stages, setStages, stage, i, customInfo: out });
-          }}
+        <Modal
+          title={song.name}
+          onDismiss={() => setModalOpen(false)}
+          component={
+            <CustomInfoModal
+              song={song}
+              modalOpen={[modalOpen, setModalOpen]}
+              onSubmit={(out) => {
+                setSong({ stages, setStages, stage, i, customInfo: out });
+              }}
+            />
+          }
         />
       ) : null}
       <div className="relative w-full">
@@ -81,11 +87,9 @@ export default function Selector(props: Props) {
           placeholder={props.last ? '+ADD SONG...' : 'SONG NAME...'}
           value={song.name}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
-            e.preventDefault();
             setSong({ stages, setStages, songName: e.target.value, i, stage });
           }}
           onBlur={() => {
-            console.log('aa');
             setInputFocus(false);
           }}
           onFocus={() => {
@@ -120,54 +124,3 @@ export default function Selector(props: Props) {
     </li>
   );
 }
-
-const CustomInfoModal = ({
-  song,
-  onSubmit,
-  modalOpen: [, setModalOpen],
-}: {
-  song: songType;
-  onSubmit: (input: string) => void;
-  modalOpen: [boolean, Dispatch<boolean>];
-}) => {
-  const options = ['pyro', 'confetti', 'lasers', 'flames', 'streamers', 'acoustic', 'special guest'];
-
-  return (
-    <Modal title={song.name} onDismiss={() => setModalOpen(false)}>
-      {/* //TODO if no song name dont open modal*/}
-      <span className="block font-mono text-sm uppercase">bruh</span>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          setModalOpen(false);
-          const out = options
-            .filter((el) => (e.currentTarget.elements.namedItem(el) as HTMLInputElement).checked)
-            .join(',');
-          onSubmit(out);
-        }}
-      >
-        <ul className="my-6">
-          {options.map((info) => (
-            <li className="my-2 flex" key={info}>
-              <input
-                type="checkbox"
-                defaultChecked={song.customInfo?.includes(info)}
-                name={info}
-                id={info}
-                className="h-5 w-5 rounded-none accent-[#BB6BD9]"
-              />
-              <label htmlFor={info} className="ml-2 text-sm font-bold uppercase">
-                {info}
-              </label>
-            </li>
-          ))}
-          {/* //TODO 'other' option */}
-        </ul>
-        <div>
-          <input type="submit" value="save" className="w-4/5 bg-[#BB6BD9] p-2 text-sm font-bold uppercase text-white" />
-          <input type="abort" value="reset" className="w-1/5 p-2 text-sm font-bold uppercase text-[#BB6BD9]" />
-        </div>
-      </form>
-    </Modal>
-  );
-};
