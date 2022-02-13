@@ -9,17 +9,17 @@ export default function AutoComplete() {
   return (
     <ul className="absolute z-20 mt-1 w-[80vw] bg-white shadow-xl">
       {tracks
-        .filter((track) => track.toUpperCase().includes(song.name.toUpperCase()))
+        .filter((track) => track.name.toUpperCase().includes(song.name.toUpperCase()))
         .slice(0, 10)
-        .map((trackName) => (
-          <li key={trackName} className="w-full">
+        .map((track) => (
+          <li key={track.name} className="w-full">
             <button
               onMouseDown={() => {
-                setSong({ stage, setStages, stages, i, songName: trackName });
+                setSong({ stage, setStages, stages, i, songName: track.name });
               }}
               className="w-full border-b border-gray-200 py-2 px-3 text-left text-sm font-bold uppercase hover:bg-secondary-blue"
             >
-              {trackName}
+              {track.name}
             </button>
           </li>
         ))}
