@@ -1,27 +1,29 @@
 import React, { Dispatch, useContext, useState } from 'react';
 import Header from '../components/Header';
-import Modal from '../components/Modal';
+import Notification from '../components/Notification';
 import Selector from '../components/Selector';
 import { context, songType, stageType } from '../context/State';
 import { addStage } from '../utils/editorMethods';
 import SongContext from '../context/SongContext';
 import StageHeader from '../components/StageHeader';
 import { OverlayRenderer } from '../components/Overlay';
+import { ModalRenderer } from '../components/Modal';
 
 export default function Editor() {
-  const [modalHidden, setModalHidden] = useState(false);
+  const [notificationHidden, setNotificationHidden] = useState(false);
   const [stages, setStages] = useContext(context).stages as [stageType[], Dispatch<stageType[]>];
 
   return (
     <div className="bg-main h-fit min-h-min w-screen">
       <OverlayRenderer />
+      <ModalRenderer />
       <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content' }}>
         <Header />
-        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10">
-          <Modal hidden={modalHidden} onDismiss={() => setModalHidden(true)}>
+        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10 pb-52">
+          <Notification hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
             Reorder, add, edit, delete add special effecs Lorem ipsum instructions for how you can do your setlist here,
             press save when you’re done.
-          </Modal>
+          </Notification>
           <ul>
             {stages.map((stage: stageType, stageIndex: number) => (
               <li key={stage.id}>
