@@ -15,6 +15,7 @@ import { setSong, addSong, removeSong, moveSong } from '../utils/editorMethods';
 import Menu, { menuItemType } from './Menu';
 import Modal from './Modal';
 import CustomInfoModal from './Modals/CustomInfoModal';
+import ChangeStageModal from './Modals/ChangeStageModal';
 
 interface Props {
   last?: boolean;
@@ -24,14 +25,15 @@ export default function Selector(props: Props) {
   const { stage, stages, setStages, i, song } = useContext(SongContext) as songContextDataType;
   const [inputFocus, setInputFocus] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [customInfoModalOpen, setCustomInfoModalOpen] = useState<boolean>(false);
+  const [changeStageModalOpen, setChangeStageModalOpen] = useState<boolean>(false);
 
   const menuItems: menuItemType[] = [
     {
       Icon: PlusCircleIcon,
       name: 'ADD CUSTOM INFO',
       action: () => {
-        setModalOpen(true);
+        setCustomInfoModalOpen(true);
       },
     },
     {
@@ -52,7 +54,7 @@ export default function Selector(props: Props) {
       Icon: GlobeAltIcon,
       name: 'CHANGE STAGE',
       action: () => {
-        console.log('change stage');
+        setChangeStageModalOpen(true);
       },
     },
     {
@@ -66,14 +68,21 @@ export default function Selector(props: Props) {
 
   return (
     <li className={`${props.last ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
-      {modalOpen ? (
+      {changeStageModalOpen ? (
+        <Modal
+          title="Change stage"
+          onDismiss={() => setChangeStageModalOpen(false)}
+          component={<ChangeStageModal></ChangeStageModal>}
+        />
+      ) : null}
+      {customInfoModalOpen ? (
         <Modal
           title={song.name}
-          onDismiss={() => setModalOpen(false)}
+          onDismiss={() => setCustomInfoModalOpen(false)}
           component={
             <CustomInfoModal
               song={song}
-              modalOpen={[modalOpen, setModalOpen]}
+              modalOpen={[customInfoModalOpen, setCustomInfoModalOpen]}
               onSubmit={(out) => {
                 setSong({ stages, setStages, stage, i, customInfo: out });
               }}
@@ -110,7 +119,7 @@ export default function Selector(props: Props) {
         />
         <ArrowSmDownIcon
           className={`${
-            i == stage.songs.length - 2 ? 'pointer-events-none text-gray-400' : 'text-gray-600'
+            i == stage.songs.length - (props.last ? 2 : 1) ? 'pointer-events-none text-gray-400' : 'text-gray-600'
           } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i + 1 });
