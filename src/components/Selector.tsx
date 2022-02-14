@@ -27,6 +27,7 @@ export default function Selector(props: Props) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [customInfoModalOpen, setCustomInfoModalOpen] = useState<boolean>(false);
   const [changeStageModalOpen, setChangeStageModalOpen] = useState<boolean>(false);
+  const [value, setValue] = useState<string>('');
 
   const menuItems: menuItemType[] = [
     {
@@ -117,6 +118,7 @@ export default function Selector(props: Props) {
           value={song.name}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
             setSong({ stages, setStages, songName: e.target.value, i, stage });
+            setValue(e.target.value);
           }}
           onBlur={() => {
             setInputFocus(false);
@@ -126,7 +128,7 @@ export default function Selector(props: Props) {
             if (props.last) addSong({ stages, setStages, i: i + 1, stage });
           }}
         />
-        {inputFocus ? <AutoComplete /> : <></>}
+        {inputFocus && value.length != 0 ? <AutoComplete /> : <></>}
       </div>
       <div className={`${props.last ? 'pointer-events-none' : 'pointer-events-auto'} flex`}>
         <ArrowSmUpIcon
