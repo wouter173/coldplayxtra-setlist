@@ -72,7 +72,27 @@ export default function Selector(props: Props) {
         <Modal
           title="Change stage"
           onDismiss={() => setChangeStageModalOpen(false)}
-          component={<ChangeStageModal></ChangeStageModal>}
+          component={
+            <ChangeStageModal
+              stages={stages}
+              modalOpen={[changeStageModalOpen, setChangeStageModalOpen]}
+              onSubmit={(out) => {
+                const newStage = stages.filter((s) => s.id == out.id)[0];
+                setSong({
+                  stages,
+                  setStages,
+                  stage: newStage,
+                  i: newStage.songs.length - 1,
+                  customInfo: song.customInfo,
+                  songName: song.name,
+                });
+                removeSong({ stages, setStages, stage, i });
+                if (stages.indexOf(newStage) == stages.length - 1)
+                  addSong({ setStages, stage: newStage, i: newStage.songs.length, stages });
+              }}
+              song={song}
+            ></ChangeStageModal>
+          }
         />
       ) : null}
       {customInfoModalOpen ? (
@@ -119,7 +139,9 @@ export default function Selector(props: Props) {
         />
         <ArrowSmDownIcon
           className={`${
-            i == stage.songs.length - (props.last ? 2 : 1) ? 'pointer-events-none text-gray-400' : 'text-gray-600'
+            i == stage.songs.length - (stages.indexOf(stage) == stages.length - 1 ? 2 : 1)
+              ? 'pointer-events-none text-gray-400'
+              : 'text-gray-600'
           } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i + 1 });
