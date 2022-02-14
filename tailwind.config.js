@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         body: "'Lato', sans-serif",
         head: "'Nunito Sans', sans-serif",
+        mono: "'Source Code Pro', monospace",
       },
     },
   },

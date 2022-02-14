@@ -10,7 +10,10 @@ export default function Document() {
         <meta name="theme-color" content="#111111" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Code+Pro&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />
