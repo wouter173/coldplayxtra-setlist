@@ -2,6 +2,17 @@ import { Dispatch, useState } from 'react';
 import { songType } from '../../context/State';
 import { tracks } from '../../data/tracks';
 
+export type CustomInfo =
+  | 'pyro'
+  | 'confetti'
+  | 'lasers'
+  | 'flames'
+  | 'streamers'
+  | 'acoustic'
+  | 'special guest'
+  | 'cover';
+const options = ['pyro', 'confetti', 'lasers', 'flames', 'streamers', 'acoustic', 'special guest', 'cover'];
+
 const CustomInfoModal = ({
   song,
   onSubmit,
@@ -11,7 +22,6 @@ const CustomInfoModal = ({
   onSubmit: (input: string[]) => void;
   modalOpen: [boolean, Dispatch<boolean>];
 }) => {
-  const options = ['pyro', 'confetti', 'lasers', 'flames', 'streamers', 'acoustic', 'special guest'];
   const [values, setValues] = useState<string[]>(song.customInfo);
   const [otherVisible, setOtherVisible] = useState(values.filter((e) => !options.includes(e)).length > 0);
   const [otherValue, setOtherValue] = useState(values.filter((e) => !options.includes(e))[0]);
