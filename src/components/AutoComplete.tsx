@@ -17,9 +17,15 @@ export default function AutoComplete() {
               onMouseDown={() => {
                 setSong({ stage, setStages, stages, i, songName: track.name });
               }}
-              className="w-full border-b border-gray-200 py-2 px-3 text-left text-sm font-bold uppercase hover:bg-secondary-blue"
+              className="w-full border-b border-gray-200 py-2 px-3 hover:bg-secondary-blue"
             >
-              {track.name}
+              <div className="flex items-center">
+                <img className="h-14 w-14" alt={track.album + ' album cover'} src={track.artwork} />
+                <div className="px-3 py-2 text-left">
+                  <span className="text-base font-bold uppercase text-black">{track.name}</span>
+                  <span className="block text-sm uppercase text-gray-500">{track.album}</span>
+                </div>
+              </div>
             </button>
           </li>
         ))}
