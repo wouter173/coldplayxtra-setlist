@@ -8,6 +8,7 @@ import SongContext from '../context/SongContext';
 import StageHeader from '../components/StageHeader';
 import { OverlayRenderer } from '../components/Overlay';
 import { ModalRenderer } from '../components/Modal';
+import StageContext from '../context/StageContext';
 
 export default function Editor() {
   const [notificationHidden, setNotificationHidden] = useState(false);
@@ -27,14 +28,16 @@ export default function Editor() {
           <ul>
             {stages.map((stage: stageType, stageIndex: number) => (
               <li key={stage.id}>
-                <StageHeader stage={stage} />
-                <ul>
-                  {stage.songs.map((song: songType, songIndex: number) => (
-                    <SongContext.Provider value={{ i: songIndex, song, setStages, stages, stage }} key={song.id}>
-                      <Selector last={songIndex == stage.songs.length - 1 && stageIndex == stages.length - 1} />
-                    </SongContext.Provider>
-                  ))}
-                </ul>
+                <StageContext.Provider value={{ stages, setStages, stage }}>
+                  <StageHeader />
+                  <ul>
+                    {stage.songs.map((song: songType, songIndex: number) => (
+                      <SongContext.Provider value={{ i: songIndex, song, setStages, stages, stage }} key={song.id}>
+                        <Selector last={songIndex == stage.songs.length - 1 && stageIndex == stages.length - 1} />
+                      </SongContext.Provider>
+                    ))}
+                  </ul>
+                </StageContext.Provider>
               </li>
             ))}
             <button

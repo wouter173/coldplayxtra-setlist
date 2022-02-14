@@ -50,3 +50,10 @@ export const addStage = ({ stages, setStages }: argsType) => {
 export const removeStage = ({ stages, setStages, stage }: argsType<{ stage: stageType }>) => {
   setStages(stages.filter((el) => el.id != stage.id));
 };
+
+export const renameStage = (args: argsType<{ stage: stageType; name: string }>) => {
+  const newStages = [...args.stages];
+  const newStageIndex = getStage(args.stages, args.stage.id);
+  newStages[newStageIndex].name = args.name;
+  args.setStages(newStages);
+};
