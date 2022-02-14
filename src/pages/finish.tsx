@@ -1,20 +1,54 @@
+import { DownloadIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../components/Button';
+import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 
 export default function Finish() {
   const router = useRouter();
+  const [data, setData] = useState('');
+  const [canShare, setCanShare] = useState(false);
+
+  useEffect(() => {
+    console.log(window.navigator.share);
+    setCanShare(window.navigator.canShare != undefined);
+  }, []);
+
+  const share = async () => {
+    const blob = await (await fetch(data)).blob();
+    navigator
+      .share({
+        files: [new File([blob], 'setlist.png', { type: blob.type, lastModified: new Date().getTime() })],
+      })
+      .catch(() => {
+        console.log('share cancelled');
+      });
+  };
+
+  const download = async () => {
+    const el = document.createElement('a');
+    const blob = await (await fetch(data)).blob();
+    el.href = URL.createObjectURL(blob);
+    el.download = 'setlist';
+    el.click();
+  };
+
   return (
     <div className="bg-main h-fit min-h-screen w-screen">
       <div className="h-fulll grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
         <Header />
         <nav className="g m-4 flex">
           <Button onClick={() => router.back()}>back</Button>
-          <Button className="ml-auto">download</Button>
+          <div className="flerx-col ml-auto flex">
+            {canShare ? <Button onClick={() => share()}>share</Button> : null}
+            <Button className="ml-2" onClick={() => download()}>
+              {canShare ? <DownloadIcon className="h-6 w-6" /> : <>Download</>}
+            </Button>
+          </div>
         </nav>
         <div>
-          <canvas></canvas>
+          <Canvas className="mx-auto w-full" getData={(data) => setData(data)} />
         </div>
       </div>
     </div>
