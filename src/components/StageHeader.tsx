@@ -1,4 +1,4 @@
-import { DotsVerticalIcon } from '@heroicons/react/outline';
+import { DotsVerticalIcon, PencilAltIcon, TrashIcon } from '@heroicons/react/outline';
 import React, { useState } from 'react';
 import { stageType } from '../context/State';
 import Menu, { menuItemType } from './Menu';
@@ -7,7 +7,18 @@ type Props = {
   stage: stageType;
 };
 
-const menuItems: menuItemType[] = [];
+const menuItems: menuItemType[] = [
+  {
+    action: () => {},
+    name: 'RENAME',
+    Icon: PencilAltIcon,
+  },
+  {
+    action: () => {},
+    name: 'REMOVE',
+    Icon: TrashIcon,
+  },
+];
 
 export default function StageHeader(props: Props) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);

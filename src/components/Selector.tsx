@@ -79,20 +79,20 @@ export default function Selector(props: Props) {
               modalOpen={[changeStageModalOpen, setChangeStageModalOpen]}
               onSubmit={(out) => {
                 const newStage = stages.filter((s) => s.id == out.id)[0];
+                const last = stages.indexOf(newStage) == stages.length - 1;
+                addSong({ setStages, stage: newStage, i: newStage.songs.length - (last ? 1 : 0), stages });
                 setSong({
                   stages,
                   setStages,
                   stage: newStage,
-                  i: newStage.songs.length - 1,
+                  i: newStage.songs.length - (last ? 2 : 1),
                   customInfo: song.customInfo,
                   songName: song.name,
                 });
                 removeSong({ stages, setStages, stage, i });
-                if (stages.indexOf(newStage) == stages.length - 1)
-                  addSong({ setStages, stage: newStage, i: newStage.songs.length, stages });
               }}
               song={song}
-            ></ChangeStageModal>
+            />
           }
         />
       ) : null}

@@ -1,12 +1,11 @@
 import React, { createContext, Dispatch, PropsWithChildren, SetStateAction, useState } from 'react';
-import { CustomInfo } from '../components/Modals/CustomInfoModal';
 import { GenerateID } from '../utils/IdGenerator';
 
 type contextType<T> = { [key: string]: [T, Dispatch<SetStateAction<T>>] };
 export type songType = {
   id: string;
   name: string;
-  customInfo: CustomInfo[];
+  customInfo: string[];
 };
 export type stageType = { id: string; name: string; songs: songType[] };
 

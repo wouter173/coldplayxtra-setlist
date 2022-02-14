@@ -46,3 +46,7 @@ export const addStage = ({ stages, setStages }: argsType) => {
     { id: GenerateID(), name: 'new stage', songs: [{ id: GenerateID(), name: '', customInfo: [] }] },
   ]);
 };
+
+export const removeStage = ({ stages, setStages, stage }: argsType<{ stage: stageType }>) => {
+  setStages(stages.filter((el) => el.id != stage.id));
+};

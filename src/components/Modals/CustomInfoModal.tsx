@@ -2,15 +2,6 @@ import { Dispatch, useState } from 'react';
 import { songType } from '../../context/State';
 import { tracks } from '../../data/tracks';
 
-export type CustomInfo =
-  | 'pyro'
-  | 'confetti'
-  | 'lasers'
-  | 'flames'
-  | 'streamers'
-  | 'acoustic'
-  | 'special guest'
-  | 'cover';
 const options = ['pyro', 'confetti', 'lasers', 'flames', 'streamers', 'acoustic', 'special guest', 'cover'];
 
 const CustomInfoModal = ({
@@ -43,7 +34,7 @@ const CustomInfoModal = ({
             <li className="my-2 flex" key={info}>
               <input
                 type="checkbox"
-                defaultChecked={song.customInfo.includes(info as CustomInfo)}
+                defaultChecked={song.customInfo.includes(info)}
                 name={info}
                 id={info}
                 className="h-5 w-5 rounded-none accent-[#BB6BD9]"
