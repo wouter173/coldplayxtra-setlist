@@ -14,7 +14,7 @@ export const tracks: Track[] = [
     spotifyId: '1a3G9SNslcKsPAOuIikaxd',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Higher Power',
@@ -22,7 +22,7 @@ export const tracks: Track[] = [
     spotifyId: '65OR4ywy8Cgs3FDHK82Idl',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Humankind',
@@ -30,7 +30,7 @@ export const tracks: Track[] = [
     spotifyId: '23BO6YozrAXUta1buxFZ80',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Alien Choir',
@@ -38,7 +38,7 @@ export const tracks: Track[] = [
     spotifyId: '1danObd53GynoY83wRz3Ua',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Let Somebody Go',
@@ -46,7 +46,7 @@ export const tracks: Track[] = [
     spotifyId: '4cGqn0E8JCSY9gQllQj4Mf',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Human Heart',
@@ -54,7 +54,7 @@ export const tracks: Track[] = [
     spotifyId: '3oTYv0yShT4sjuPncoUXfK',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'People of The Pride',
@@ -62,7 +62,7 @@ export const tracks: Track[] = [
     spotifyId: '5ophZLHA9mwSZhQSmboyDN',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Biutyful',
@@ -70,7 +70,7 @@ export const tracks: Track[] = [
     spotifyId: '2L2mM3rEO3arNIMQnb3dou',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Music Of The Spheres II',
@@ -78,7 +78,7 @@ export const tracks: Track[] = [
     spotifyId: '0RbekAlUrwR6ZWJdwB3V4y',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'My Universe',
@@ -86,7 +86,7 @@ export const tracks: Track[] = [
     spotifyId: '46HNZY1i7O6jwTA7Slo2PI',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Infinity Sign',
@@ -94,7 +94,7 @@ export const tracks: Track[] = [
     spotifyId: '2wleRXcIPqltoDPLMH5WDa',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Coloratura',
@@ -102,7 +102,7 @@ export const tracks: Track[] = [
     spotifyId: '0jH7gF7KCk2Lom9gimaKms',
     album: 'Music Of The Spheres',
     albumId: '06mXfvDsRZNfnsGZvX2zpb',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273ec10f247b100da1ce0d80b6d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02ec10f247b100da1ce0d80b6d',
   },
   {
     name: 'Sunrise',
@@ -110,7 +110,7 @@ export const tracks: Track[] = [
     spotifyId: '6Tb7Zfo4PcSiS4TqQ4NnTh',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Church',
@@ -118,7 +118,7 @@ export const tracks: Track[] = [
     spotifyId: '1e8D1BCD2afT56Km7UahpB',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Trouble In Town',
@@ -126,7 +126,7 @@ export const tracks: Track[] = [
     spotifyId: '45PqOIkZ9PdCjsCJQYzx9G',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'BrokEn',
@@ -134,7 +134,7 @@ export const tracks: Track[] = [
     spotifyId: '1cXXhzPnbrXjNQYbLdUJdy',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Daddy',
@@ -142,7 +142,7 @@ export const tracks: Track[] = [
     spotifyId: '3pcPPhPAiurm2Ior11SHrz',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'WOTW / POTP',
@@ -150,7 +150,7 @@ export const tracks: Track[] = [
     spotifyId: '7jib2tJjQ82kTIZZATMvAK',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Arabesque',
@@ -158,7 +158,7 @@ export const tracks: Track[] = [
     spotifyId: '0ZlVUhjO8c0bOx1D2Btznf',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'When I Need A Friend',
@@ -166,7 +166,7 @@ export const tracks: Track[] = [
     spotifyId: '0UvUivL70eDwhTWBd8S38I',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Guns',
@@ -174,7 +174,7 @@ export const tracks: Track[] = [
     spotifyId: '6VzRvCbolqcUswaSPm48rI',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Orphans',
@@ -182,7 +182,7 @@ export const tracks: Track[] = [
     spotifyId: '03T4ttRCiLXST6MZjeMwmR',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Eko',
@@ -190,7 +190,7 @@ export const tracks: Track[] = [
     spotifyId: '2HUtNS9qtfgWbnaagK6AAe',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Cry Cry Cry',
@@ -198,7 +198,7 @@ export const tracks: Track[] = [
     spotifyId: '4Kwhm5VU4huxmQtBqd1AXo',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Old Friends',
@@ -206,7 +206,7 @@ export const tracks: Track[] = [
     spotifyId: '3E3zYgQul8EaJioNvD2tv9',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Bani Adam',
@@ -214,7 +214,7 @@ export const tracks: Track[] = [
     spotifyId: '6DGzLNiawTtntC9NHzeMeY',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Champion Of The World',
@@ -222,7 +222,7 @@ export const tracks: Track[] = [
     spotifyId: '6mf7BNgXs8JipPr2QILnyN',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Everyday Life',
@@ -230,7 +230,7 @@ export const tracks: Track[] = [
     spotifyId: '0h9fnCSnbUgOEgibnQByFv',
     album: 'Everyday Life',
     albumId: '2FeyIYDDAQqcOJKOKhvHdr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273733913465adb99353020b805',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02733913465adb99353020b805',
   },
   {
     name: 'Trouble in Town',
@@ -238,7 +238,7 @@ export const tracks: Track[] = [
     spotifyId: '54XS0PDjYnK85mMByQ03we',
     album: 'Everyday Life',
     albumId: '4dBp8rzdqH9unSndGk6g6o',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2737409e3398d17262a3ad6e58b',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e027409e3398d17262a3ad6e58b',
   },
   {
     name: 'A Head Full of Dreams',
@@ -246,7 +246,7 @@ export const tracks: Track[] = [
     spotifyId: '6f49kbOuQSOsStBpyGvQfA',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Birds',
@@ -254,7 +254,7 @@ export const tracks: Track[] = [
     spotifyId: '3HWDWyIqWuLsTHECx9DvXF',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Hymn for the Weekend',
@@ -262,7 +262,7 @@ export const tracks: Track[] = [
     spotifyId: '3RiPr603aXAoi4GHyXx0uy',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Everglow',
@@ -270,7 +270,7 @@ export const tracks: Track[] = [
     spotifyId: '5qfZRNjt2TkHEL12r3sDEU',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Adventure of a Lifetime',
@@ -278,7 +278,7 @@ export const tracks: Track[] = [
     spotifyId: '69uxyAqqPIsUyTO8txoP2M',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Fun (feat. Tove Lo)',
@@ -286,7 +286,7 @@ export const tracks: Track[] = [
     spotifyId: '7fJFDK6XjYsXcMKNHESbot',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Kaleidoscope',
@@ -294,7 +294,7 @@ export const tracks: Track[] = [
     spotifyId: '7IX7VAXujvcZ3e1PG7sGP7',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Army of One',
@@ -302,7 +302,7 @@ export const tracks: Track[] = [
     spotifyId: '4giCxIFPZNQIP4bIZM4sqH',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Amazing Day',
@@ -310,7 +310,7 @@ export const tracks: Track[] = [
     spotifyId: '3wtV2ifnHzirkAElgTGh63',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Colour Spectrum',
@@ -318,7 +318,7 @@ export const tracks: Track[] = [
     spotifyId: '3VqiD8Yvk6bKwqS1e64PHB',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Up&Up',
@@ -326,7 +326,7 @@ export const tracks: Track[] = [
     spotifyId: '31L9yLXSj6LpCFupyMV6CR',
     album: 'A Head Full of Dreams',
     albumId: '3cfAM8b8KqJRoIzt3zLKqw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738ff7c3580d429c8212b9a3b6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028ff7c3580d429c8212b9a3b6',
   },
   {
     name: 'Always in My Head',
@@ -334,7 +334,7 @@ export const tracks: Track[] = [
     spotifyId: '0FMjqbY3aWo1QDbo3GwXib',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'Magic',
@@ -342,7 +342,7 @@ export const tracks: Track[] = [
     spotifyId: '23khhseCLQqVMCIT1WMAns',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'Ink',
@@ -350,7 +350,7 @@ export const tracks: Track[] = [
     spotifyId: '6c6W25YoDGjTq3qSPOga5t',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'True Love',
@@ -358,7 +358,7 @@ export const tracks: Track[] = [
     spotifyId: '0fQuzbQNLcD1ofo7B2NcFI',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'Midnight',
@@ -366,7 +366,7 @@ export const tracks: Track[] = [
     spotifyId: '4GKk1uNzpxIptBuaY97Dkj',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: "Another's Arms",
@@ -374,7 +374,7 @@ export const tracks: Track[] = [
     spotifyId: '22uzF19LxQW87kOVkR79Fq',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'Oceans',
@@ -382,7 +382,7 @@ export const tracks: Track[] = [
     spotifyId: '2u4uhtETtcULnkBfFHSnDX',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'A Sky Full of Stars',
@@ -390,7 +390,7 @@ export const tracks: Track[] = [
     spotifyId: '0FDzzruyVECATHXKHFs9eJ',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'O',
@@ -398,7 +398,7 @@ export const tracks: Track[] = [
     spotifyId: '77yuzxCS3csrgTPSW0pvyk',
     album: 'Ghost Stories',
     albumId: '2G4AUqfwxcV1UdQjm2ouYr',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f864bcdcc245f06831d17ae0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f864bcdcc245f06831d17ae0',
   },
   {
     name: 'Mylo Xyloto',
@@ -406,7 +406,7 @@ export const tracks: Track[] = [
     spotifyId: '3vCzHYgSjMuGjFMfJSCx4c',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Hurts Like Heaven',
@@ -414,7 +414,7 @@ export const tracks: Track[] = [
     spotifyId: '6WF4hzdGXvXd1joERSXJjm',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Paradise',
@@ -422,7 +422,7 @@ export const tracks: Track[] = [
     spotifyId: '6nek1Nin9q48AVZcWs9e9D',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Charlie Brown',
@@ -430,7 +430,7 @@ export const tracks: Track[] = [
     spotifyId: '1yqMgZNrevsWMLWfO2PRp5',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Us Against the World',
@@ -438,7 +438,7 @@ export const tracks: Track[] = [
     spotifyId: '5zyfzNnBzN7f7PVkJFnW2g',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'M.M.I.X.',
@@ -446,7 +446,7 @@ export const tracks: Track[] = [
     spotifyId: '5Y7ztPw93VbAle55brM0jo',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Every Teardrop Is a Waterfall',
@@ -454,7 +454,7 @@ export const tracks: Track[] = [
     spotifyId: '2U8g9wVcUu9wsg6i7sFSv8',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Major Minus',
@@ -462,7 +462,7 @@ export const tracks: Track[] = [
     spotifyId: '6maXBs9zUY48m1UNHgTeRC',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'U.F.O.',
@@ -470,7 +470,7 @@ export const tracks: Track[] = [
     spotifyId: '6BbIybrP84Tp99DLJg1cq3',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Princess of China',
@@ -478,7 +478,7 @@ export const tracks: Track[] = [
     spotifyId: '4HXOBjwv2RnLpGG4xWOO6N',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Up in Flames',
@@ -486,7 +486,7 @@ export const tracks: Track[] = [
     spotifyId: '06t6JWrU05BxaKPtct2P2n',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'A Hopeful Transmission',
@@ -494,7 +494,7 @@ export const tracks: Track[] = [
     spotifyId: '6n1x3DYFDpRau83XsI32NU',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: "Don't Let It Break Your Heart",
@@ -502,7 +502,7 @@ export const tracks: Track[] = [
     spotifyId: '69ho6gqRw1Rjy56tXlvnqk',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Up with the Birds',
@@ -510,7 +510,7 @@ export const tracks: Track[] = [
     spotifyId: '5lIFsEWj9IjNEALbHnPosE',
     album: 'Mylo Xyloto',
     albumId: '2R7iJz5uaHjLEVnMkloO18',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273de0cd11d7b31c3bd1fd5983d',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02de0cd11d7b31c3bd1fd5983d',
   },
   {
     name: 'Life in Technicolor',
@@ -518,7 +518,7 @@ export const tracks: Track[] = [
     spotifyId: '21E3m3rXhgWjQTo32scmfy',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Cemeteries of London',
@@ -526,7 +526,7 @@ export const tracks: Track[] = [
     spotifyId: '6xbbxvsdy2kC16kUDssPLD',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Lost!',
@@ -534,7 +534,7 @@ export const tracks: Track[] = [
     spotifyId: '4YSmynoaeBvITzp3N8iXYU',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: '42',
@@ -542,7 +542,7 @@ export const tracks: Track[] = [
     spotifyId: '50CsvQKRsEd9wiYMcdsHeg',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Lovers in Japan',
@@ -550,7 +550,7 @@ export const tracks: Track[] = [
     spotifyId: '0Hwwbk98kXcwyvtgkdqlMD',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Yes',
@@ -558,7 +558,7 @@ export const tracks: Track[] = [
     spotifyId: '5kidFrzCBTmWlzKssBbaLb',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Viva La Vida',
@@ -566,7 +566,7 @@ export const tracks: Track[] = [
     spotifyId: '3zzwBtusqxBiGRsGpsnN3F',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Violet Hill',
@@ -574,7 +574,7 @@ export const tracks: Track[] = [
     spotifyId: '62UfaFAh45l2jimrgvQRvB',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Strawberry Swing',
@@ -582,7 +582,7 @@ export const tracks: Track[] = [
     spotifyId: '4DLHhwZCJptTUCQPk6IAq8',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Death and All His Friends',
@@ -590,7 +590,7 @@ export const tracks: Track[] = [
     spotifyId: '6BwzZV2z4CS6n85sqmk0BU',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Life in Technicolor ii',
@@ -598,7 +598,7 @@ export const tracks: Track[] = [
     spotifyId: '0VpFFXnT2kNjqJmTv57aZi',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Postcards from Far Away',
@@ -606,7 +606,7 @@ export const tracks: Track[] = [
     spotifyId: '4sbbpL1WwwGRr6xWk2y0Hk',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Glass of Water',
@@ -614,7 +614,7 @@ export const tracks: Track[] = [
     spotifyId: '0Y27miOkWnVymvOIA19BgU',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Rainy Day',
@@ -622,7 +622,7 @@ export const tracks: Track[] = [
     spotifyId: '551YulB9BVtzcCQl0vX6nC',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: "Prospekt's March / Poppyfields",
@@ -630,7 +630,7 @@ export const tracks: Track[] = [
     spotifyId: '4yr1059N96a8msTHVftmFN',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Lost+ (with Jay-Z)',
@@ -638,7 +638,7 @@ export const tracks: Track[] = [
     spotifyId: '1y0ZoHeeEd0XTT8X7SnSq3',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: "Now My Feet Won't Touch the Ground",
@@ -646,7 +646,7 @@ export const tracks: Track[] = [
     spotifyId: '4PA4J8GvCN8RuE39wJ1QT1',
     album: "Viva La Vida (Prospekt's March Edition)",
     albumId: '4XTT0NcNHyvl6h9JX2AfEi',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730de348af6c3e533f24c99472',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020de348af6c3e533f24c99472',
   },
   {
     name: 'Square One',
@@ -654,7 +654,7 @@ export const tracks: Track[] = [
     spotifyId: '2zQIITgo6sc5ppOfPcH205',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'What If',
@@ -662,7 +662,7 @@ export const tracks: Track[] = [
     spotifyId: '39qRdHcl2tizWbzlM9kUlN',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'White Shadows',
@@ -670,7 +670,7 @@ export const tracks: Track[] = [
     spotifyId: '0WWz2AaqxLoO0fa9ou6Fqc',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Fix You',
@@ -678,7 +678,7 @@ export const tracks: Track[] = [
     spotifyId: '7LVHVU3tWfcxj5aiPFEW4Q',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Talk',
@@ -686,7 +686,7 @@ export const tracks: Track[] = [
     spotifyId: '4wzt5Rrk3W98pHXAqutuJw',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'X&Y',
@@ -694,7 +694,7 @@ export const tracks: Track[] = [
     spotifyId: '2rxp56vVQp1zzumJ0eHLmw',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Speed of Sound',
@@ -702,7 +702,7 @@ export const tracks: Track[] = [
     spotifyId: '7clUVcSOtkNWa58Gw5RfD4',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'A Message',
@@ -710,7 +710,7 @@ export const tracks: Track[] = [
     spotifyId: '2w3eXFL86RgxGtDr8bzwgK',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Low',
@@ -718,7 +718,7 @@ export const tracks: Track[] = [
     spotifyId: '1BBtng1KOF0JuC6bSNgGmp',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'The Hardest Part',
@@ -726,7 +726,7 @@ export const tracks: Track[] = [
     spotifyId: '4Tw9JYF9HOuPRyccNWMgwf',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Swallowed in the Sea',
@@ -734,7 +734,7 @@ export const tracks: Track[] = [
     spotifyId: '2u2WL5N3KnQnykOZi3fxL6',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Twisted Logic',
@@ -742,7 +742,7 @@ export const tracks: Track[] = [
     spotifyId: '6kevl5fnM7GRJ2K2rBBnxq',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Til Kingdom Come',
@@ -750,7 +750,7 @@ export const tracks: Track[] = [
     spotifyId: '1wQXj5bgxyZQ2XmE2X9s6n',
     album: 'X&Y',
     albumId: '4E7bV0pzG0LciBSWTszra6',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2734e0362c225863f6ae2432651',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e024e0362c225863f6ae2432651',
   },
   {
     name: 'Politik',
@@ -758,7 +758,7 @@ export const tracks: Track[] = [
     spotifyId: '0u35Dpz37TY2M2j20RUdMf',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'In My Place',
@@ -766,7 +766,7 @@ export const tracks: Track[] = [
     spotifyId: '2nvC4i2aMo4CzRjRflysah',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'God Put a Smile upon Your Face',
@@ -774,7 +774,7 @@ export const tracks: Track[] = [
     spotifyId: '4hf0hL4kWyjWztZzVsM39V',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'The Scientist',
@@ -782,7 +782,7 @@ export const tracks: Track[] = [
     spotifyId: '75JFxkI2RXiU7L9VXzMkle',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'Clocks',
@@ -790,7 +790,7 @@ export const tracks: Track[] = [
     spotifyId: '0BCPKOYdS2jbQ8iyB56Zns',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'Daylight',
@@ -798,7 +798,7 @@ export const tracks: Track[] = [
     spotifyId: '4fP4xTSBli3tKck172LEZ4',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'Green Eyes',
@@ -806,7 +806,7 @@ export const tracks: Track[] = [
     spotifyId: '3ou9rSNUQnE7XYmJkUUIOc',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'Warning Sign',
@@ -814,7 +814,7 @@ export const tracks: Track[] = [
     spotifyId: '4bPkBHKLKd9WHizsvM2zV3',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'A Whisper',
@@ -822,7 +822,7 @@ export const tracks: Track[] = [
     spotifyId: '7KolrFGhfDi1JTSgQBT5sI',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'A Rush of Blood to the Head',
@@ -830,7 +830,7 @@ export const tracks: Track[] = [
     spotifyId: '4JJ5zGKnb1IpERyBrfmb1y',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: 'Amsterdam',
@@ -838,7 +838,7 @@ export const tracks: Track[] = [
     spotifyId: '2uQ4px5SPONsgcUpulywIQ',
     album: 'A Rush of Blood to the Head',
     albumId: '0RHX9XECH8IVI3LNgWDpmQ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27390afd8e4ec6d787114ed6c40',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0290afd8e4ec6d787114ed6c40',
   },
   {
     name: "Don't Panic",
@@ -846,7 +846,7 @@ export const tracks: Track[] = [
     spotifyId: '2QhURnm7mQDxBb5jWkbDug',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Shiver',
@@ -854,7 +854,7 @@ export const tracks: Track[] = [
     spotifyId: '0qksx8mV28lztYIZ1om8ml',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Spies',
@@ -862,7 +862,7 @@ export const tracks: Track[] = [
     spotifyId: '2mLgOcRkEgq89j8WstUpui',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Sparks',
@@ -870,7 +870,7 @@ export const tracks: Track[] = [
     spotifyId: '7D0RhFcb3CrfPuTJ0obrod',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Yellow',
@@ -878,7 +878,7 @@ export const tracks: Track[] = [
     spotifyId: '3AJwUDP919kvQ9QcozQPxg',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Trouble',
@@ -886,7 +886,7 @@ export const tracks: Track[] = [
     spotifyId: '0R8P9KfGJCDULmlEoBagcO',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Parachutes',
@@ -894,7 +894,7 @@ export const tracks: Track[] = [
     spotifyId: '4qzoHxgp42ylb18ga1SWTL',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'High Speed',
@@ -902,7 +902,7 @@ export const tracks: Track[] = [
     spotifyId: '2DHgvPQD1jApRnT1DBZdrS',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'We Never Change',
@@ -910,7 +910,7 @@ export const tracks: Track[] = [
     spotifyId: '5TB6QgrF0RPIxSCGfRDLoe',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: "Everything's Not Lost",
@@ -918,7 +918,7 @@ export const tracks: Track[] = [
     spotifyId: '1RNtm45kw0hPMBz7gKiIYu',
     album: 'Parachutes',
     albumId: '6ZG5lRT77aJ3btmArcykra',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2733d92b2ad5af9fbc8637425f0',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e023d92b2ad5af9fbc8637425f0',
   },
   {
     name: 'Flags',
@@ -926,7 +926,7 @@ export const tracks: Track[] = [
     spotifyId: '2RZ8SjEJYJHZ8YCUzls77w',
     album: 'Flags',
     albumId: '4JYjZh7R8F7Na5x1lVqOl9',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273a85609bf46c70ca70aa4fb91',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02a85609bf46c70ca70aa4fb91',
   },
   {
     name: 'All I Can Think About Is You',
@@ -934,7 +934,7 @@ export const tracks: Track[] = [
     spotifyId: '6V6goat94tTJOWXXKZstNX',
     album: 'Kaleidoscope EP',
     albumId: '0CE9VXSH70pz4BQzMPm9gO',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273e7da341ab1f16253e0d5f70e',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02e7da341ab1f16253e0d5f70e',
   },
   {
     name: 'Miracles (Someone Special)',
@@ -942,7 +942,7 @@ export const tracks: Track[] = [
     spotifyId: '6uJwPeBGb3swi85TSr9iIz',
     album: 'Kaleidoscope EP',
     albumId: '0CE9VXSH70pz4BQzMPm9gO',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273e7da341ab1f16253e0d5f70e',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02e7da341ab1f16253e0d5f70e',
   },
   {
     name: 'ALIENS',
@@ -950,7 +950,7 @@ export const tracks: Track[] = [
     spotifyId: '2bS2ADg123NZWfTUsjra8a',
     album: 'Kaleidoscope EP',
     albumId: '0CE9VXSH70pz4BQzMPm9gO',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273e7da341ab1f16253e0d5f70e',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02e7da341ab1f16253e0d5f70e',
   },
   {
     name: 'Hypnotised',
@@ -958,7 +958,7 @@ export const tracks: Track[] = [
     spotifyId: '5LXj9Ch3O9ATm1NoHT8GXn',
     album: 'Hypnotised',
     albumId: '165kxlULHc34us8oU420iw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273aa55c51dd3d5332fed519eb6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02aa55c51dd3d5332fed519eb6',
   },
   {
     name: 'Something Just Like This',
@@ -966,7 +966,7 @@ export const tracks: Track[] = [
     spotifyId: '1dNIEtp7AY3oDAKCGg2XkH',
     album: 'Something Just Like This',
     albumId: '7IzpJkWQqgz1BTutQvSitX',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273f79b7f08426e2899a832d3e6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02f79b7f08426e2899a832d3e6',
   },
   {
     name: 'All Your Friends',
@@ -974,7 +974,7 @@ export const tracks: Track[] = [
     spotifyId: '5RcZ84RmZ0TVTZQR3fWHoG',
     album: 'A Sky Full of Stars',
     albumId: '2jQB4YEh4xWhloG21IueUf',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730580059c53cc2b3687dffb3c',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020580059c53cc2b3687dffb3c',
   },
   {
     name: 'Ghost Story',
@@ -982,7 +982,7 @@ export const tracks: Track[] = [
     spotifyId: '0VAQB7OYAoeRZH7sLmhVT6',
     album: 'A Sky Full of Stars',
     albumId: '2jQB4YEh4xWhloG21IueUf',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730580059c53cc2b3687dffb3c',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020580059c53cc2b3687dffb3c',
   },
   {
     name: 'O (Reprise)',
@@ -990,7 +990,7 @@ export const tracks: Track[] = [
     spotifyId: '1NleqQdTDGWJBk0bVxldab',
     album: 'A Sky Full of Stars',
     albumId: '2jQB4YEh4xWhloG21IueUf',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730580059c53cc2b3687dffb3c',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020580059c53cc2b3687dffb3c',
   },
   {
     name: 'Atlas',
@@ -998,7 +998,7 @@ export const tracks: Track[] = [
     spotifyId: '2DI0fZ4QZmLtapszYaoG6F',
     album: 'Atlas (From “The Hunger Games: Catching Fire” Soundtrack)',
     albumId: '1aJ1PDNjC6ZzEu74BkmGE4',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2736fb6af7550078dac00ed58c7',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e026fb6af7550078dac00ed58c7',
   },
   {
     name: 'Moving to Mars',
@@ -1006,7 +1006,7 @@ export const tracks: Track[] = [
     spotifyId: '0kuv7BqWNDprDao3Tb5flN',
     album: 'Every Teardrop Is a Waterfall',
     albumId: '1oXauHeoAxhtOFX82nlun7',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27313f21b4439f31494940adf34',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0213f21b4439f31494940adf34',
   },
   {
     name: 'Christmas Lights',
@@ -1014,7 +1014,7 @@ export const tracks: Track[] = [
     spotifyId: '4fzyvSu73BhGvi96p2zwjL',
     album: 'Christmas Lights',
     albumId: '06CvxUVwS8h2aJYcCtApgy',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2735f30d36db3dd22681531d1da',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e025f30d36db3dd22681531d1da',
   },
   {
     name: 'The Goldrush',
@@ -1022,7 +1022,7 @@ export const tracks: Track[] = [
     spotifyId: '7jWasg4ilKcOwcrGPI0CT1',
     album: 'Life in Technicolor ii',
     albumId: '0He4NsgYFCODLfBKH0y3ln',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273292604e49d8af9a6253cbeef',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02292604e49d8af9a6253cbeef',
   },
   {
     name: 'Lost?',
@@ -1030,7 +1030,7 @@ export const tracks: Track[] = [
     spotifyId: '7lFdAhKhZs5lpjAVX8OzIj',
     album: 'Lost!',
     albumId: '3J6zaHMhIAWJtxhWpOdLBZ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2732db884dbcc86d13cdff38c8e',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e022db884dbcc86d13cdff38c8e',
   },
   {
     name: 'Death Will Never Conquer',
@@ -1038,7 +1038,7 @@ export const tracks: Track[] = [
     spotifyId: '5XXjAYhslP3i0eDc8LSxDU',
     album: 'Viva La Vida',
     albumId: '2JJtOvxbxzUJsDVVyYZZPJ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2732c8b5698137791e36e19a6a6',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e022c8b5698137791e36e19a6a6',
   },
   {
     name: 'A Spell a Rebel Yell',
@@ -1046,7 +1046,7 @@ export const tracks: Track[] = [
     spotifyId: '59Mg99pBZJFtvgSKIQTMMw',
     album: 'Violet Hill',
     albumId: '2Pc9C27OlgTTtjvFxulqgG',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2735baf6b171cbaf27524786db2',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e025baf6b171cbaf27524786db2',
   },
   {
     name: 'Sleeping Sun',
@@ -1054,7 +1054,7 @@ export const tracks: Track[] = [
     spotifyId: '0xkcOfbk2pyukCmMVTTauh',
     album: 'Talk',
     albumId: '5PqZvEQFscV66LOl52oGBS',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273b812c4f49d9a9ace5f0cb46a',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02b812c4f49d9a9ace5f0cb46a',
   },
   {
     name: 'Gravity',
@@ -1062,7 +1062,7 @@ export const tracks: Track[] = [
     spotifyId: '44LVgFZvUcBYo98vy71tvd',
     album: 'Talk',
     albumId: '5PqZvEQFscV66LOl52oGBS',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273b812c4f49d9a9ace5f0cb46a',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02b812c4f49d9a9ace5f0cb46a',
   },
   {
     name: 'The World Turned Upside Down',
@@ -1070,7 +1070,7 @@ export const tracks: Track[] = [
     spotifyId: '1AvVRqeSLzsZJozkyaB9cu',
     album: 'Fix You',
     albumId: '1skkhQGSj1VljTbaejos3f',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738daa4364de63705a2eaefe41',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028daa4364de63705a2eaefe41',
   },
   {
     name: "Things I Don't Understand",
@@ -1078,7 +1078,7 @@ export const tracks: Track[] = [
     spotifyId: '5AeARoYmk0okMRWAlPHLzj',
     album: 'Speed of Sound',
     albumId: '0rQTtNDDfCYNWijQz3ghQf',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273d25b723d30bf6b68a68bfe4a',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02d25b723d30bf6b68a68bfe4a',
   },
   {
     name: '2000 Miles',
@@ -1086,7 +1086,7 @@ export const tracks: Track[] = [
     spotifyId: '5v1SC5d3F8VHwqkXx53f7d',
     album: '2000 Miles',
     albumId: '0Uk9J6k7ZV1SCsezKHCg6w',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273220adaed034222cf569cc3b3',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02220adaed034222cf569cc3b3',
   },
   {
     name: 'Murder',
@@ -1094,7 +1094,7 @@ export const tracks: Track[] = [
     spotifyId: '6FNYoIM6xtaH1mBlLwDMvM',
     album: 'God Put a Smile upon Your Face',
     albumId: '5ZHXwTzxonEauEvYWIgBfw',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27373fd3be7c0d4aa420625a50e',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0273fd3be7c0d4aa420625a50e',
   },
   {
     name: 'Crests of Waves',
@@ -1102,7 +1102,7 @@ export const tracks: Track[] = [
     spotifyId: '5ZMqdwtZvvNrpUUTijZem6',
     album: 'Clocks',
     albumId: '1hnFNY7vQA0VipdplCdhPJ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730101b89babd455a9ec501562',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020101b89babd455a9ec501562',
   },
   {
     name: 'Animals',
@@ -1110,7 +1110,7 @@ export const tracks: Track[] = [
     spotifyId: '59tjfzA98dum1TXhJ4XWoe',
     album: 'Clocks',
     albumId: '1hnFNY7vQA0VipdplCdhPJ',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2730101b89babd455a9ec501562',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e020101b89babd455a9ec501562',
   },
   {
     name: 'One I Love',
@@ -1118,7 +1118,7 @@ export const tracks: Track[] = [
     spotifyId: '5YahO7aySL2lyj6DW2tS9q',
     album: 'In My Place',
     albumId: '2fycwGrq4XpHHWoLR4hOzF',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738d10caf10eb2d0e9f30346ac',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028d10caf10eb2d0e9f30346ac',
   },
   {
     name: 'I Bloom Blaum',
@@ -1126,7 +1126,7 @@ export const tracks: Track[] = [
     spotifyId: '6MCvGN1ZTLa3PZkGnLWccm',
     album: 'In My Place',
     albumId: '2fycwGrq4XpHHWoLR4hOzF',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b2738d10caf10eb2d0e9f30346ac',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e028d10caf10eb2d0e9f30346ac',
   },
   {
     name: '1.36',
@@ -1134,7 +1134,7 @@ export const tracks: Track[] = [
     spotifyId: '7fSFdF4ymvjiOIr1EzB2pu',
     album: 'The Scientist',
     albumId: '4FtNaWzjhO9OXCRFEsSmuI',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27340b57befa24e9fe0e888f4a1',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0240b57befa24e9fe0e888f4a1',
   },
   {
     name: 'I Ran Away',
@@ -1142,7 +1142,7 @@ export const tracks: Track[] = [
     spotifyId: '1DQoNwxygxmQVH972Ha75w',
     album: 'The Scientist',
     albumId: '4FtNaWzjhO9OXCRFEsSmuI',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27340b57befa24e9fe0e888f4a1',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0240b57befa24e9fe0e888f4a1',
   },
   {
     name: 'Brothers & Sisters',
@@ -1150,7 +1150,7 @@ export const tracks: Track[] = [
     spotifyId: '4E1puwynQif5GJqPEXj35p',
     album: 'Trouble',
     albumId: '5lVhDQnJYSknv2vLRX9ifV',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273edd04436162ab4876885e240',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02edd04436162ab4876885e240',
   },
   {
     name: 'Help Is Round the Corner',
@@ -1158,7 +1158,7 @@ export const tracks: Track[] = [
     spotifyId: '1AmYC6YsrtkxpTfiv3nFBn',
     album: 'Yellow',
     albumId: '3TQANfSeYZtl5rpNjYyR6U',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27383580914326a689d622ab4f2',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0283580914326a689d622ab4f2',
   },
   {
     name: 'No More Keeping My Feet on the Ground',
@@ -1166,7 +1166,7 @@ export const tracks: Track[] = [
     spotifyId: '7dmCmBBaWAQlCBAkcqMu99',
     album: 'Yellow',
     albumId: '3TQANfSeYZtl5rpNjYyR6U',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27383580914326a689d622ab4f2',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0283580914326a689d622ab4f2',
   },
   {
     name: 'For You',
@@ -1174,7 +1174,7 @@ export const tracks: Track[] = [
     spotifyId: '6hQ1OH4kWqkjxpZQt0rNwr',
     album: 'Shiver',
     albumId: '2rd83EFsdLMTyrgVizvpxX',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27323a9c568230c8b6427688a68',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0223a9c568230c8b6427688a68',
   },
   {
     name: 'Careful Where You Stand',
@@ -1182,7 +1182,7 @@ export const tracks: Track[] = [
     spotifyId: '6V3U7whxAMRzOLTli2zt26',
     album: 'Shiver',
     albumId: '2rd83EFsdLMTyrgVizvpxX',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27323a9c568230c8b6427688a68',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0223a9c568230c8b6427688a68',
   },
   {
     name: 'Bigger Stronger',
@@ -1190,7 +1190,7 @@ export const tracks: Track[] = [
     spotifyId: '5DJtltTQQvcFhP65SFqKxq',
     album: 'The Blue Room',
     albumId: '3MVb2CWB36x7VwYo5sZmf2',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273124a7215716375bcff8d6ecd',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02124a7215716375bcff8d6ecd',
   },
   {
     name: 'See You Soon',
@@ -1198,7 +1198,7 @@ export const tracks: Track[] = [
     spotifyId: '1uKzAldJYlwje9HstlwTie',
     album: 'The Blue Room',
     albumId: '3MVb2CWB36x7VwYo5sZmf2',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273124a7215716375bcff8d6ecd',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02124a7215716375bcff8d6ecd',
   },
   {
     name: 'Such a Rush',
@@ -1206,7 +1206,7 @@ export const tracks: Track[] = [
     spotifyId: '3c1NaLIIBoFof2nrDeUlc1',
     album: 'The Blue Room',
     albumId: '3MVb2CWB36x7VwYo5sZmf2',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b273124a7215716375bcff8d6ecd',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e02124a7215716375bcff8d6ecd',
   },
   {
     name: 'Easy To Please',
@@ -1214,7 +1214,7 @@ export const tracks: Track[] = [
     spotifyId: '6KHZ9SElsSmjQI7B9D0e4P',
     album: 'Brothers & Sisters',
     albumId: '1As5m9qcOZtuFzdlzCkrzI',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27361d09e7cc210d146214797b9',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0261d09e7cc210d146214797b9',
   },
   {
     name: 'Only Superstition',
@@ -1222,7 +1222,7 @@ export const tracks: Track[] = [
     spotifyId: '4eJNA83TrqZ3S6LSyK8rSf',
     album: 'Brothers & Sisters',
     albumId: '1As5m9qcOZtuFzdlzCkrzI',
-    artwork: 'https://i.scdn.co/image/ab67616d0000b27361d09e7cc210d146214797b9',
+    artwork: 'https://i.scdn.co/image/ab67616d00001e0261d09e7cc210d146214797b9',
   },
   {
     name: 'The Race',
