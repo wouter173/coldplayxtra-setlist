@@ -47,6 +47,7 @@ const Provider = (props: PropsWithChildren<{}>) => {
         { id: GenerateID(), name: 'My Universe', customInfo: [] },
         { id: GenerateID(), name: 'A Sky Full of Stars', customInfo: [] },
         { id: GenerateID(), name: 'Coloratura', customInfo: [] },
+        { id: GenerateID(), name: '', customInfo: [] },
       ],
     },
   ]);
