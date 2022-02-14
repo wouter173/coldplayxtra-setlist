@@ -43,7 +43,7 @@ const CustomInfoModal = ({
             <li className="my-2 flex" key={info}>
               <input
                 type="checkbox"
-                defaultChecked={song.customInfo.includes(info)}
+                defaultChecked={song.customInfo.includes(info as CustomInfo)}
                 name={info}
                 id={info}
                 className="h-5 w-5 rounded-none accent-[#BB6BD9]"
