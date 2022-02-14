@@ -2,6 +2,7 @@ import React, { ChangeEvent, useContext, useState } from 'react';
 import {
   ArrowSmDownIcon,
   ArrowSmUpIcon,
+  ChatIcon,
   DotsVerticalIcon,
   GlobeAltIcon,
   PlusCircleIcon,
@@ -149,7 +150,10 @@ export default function Selector(props: Props) {
             moveSong({ stages, setStages, stage, i, to: i + 1 });
           }}
         />
-        <div className="relative h-6 w-6 flex-shrink-0 cursor-pointer">
+        <div className="h-8 w-8 flex-shrink-0">
+          {song.customInfo.length > 0 ? <ChatIcon className="h-8 w-8 p-1 text-gray-400" /> : null}
+        </div>
+        <div className="relative h-6 w-6 flex-shrink-0 cursor-pointer py-1">
           <DotsVerticalIcon className="h-6 w-6 text-gray-400" onClick={() => setMenuOpen(true)} />
           {menuOpen ? <Menu items={menuItems} onDismiss={() => setMenuOpen(false)} /> : null}
         </div>
