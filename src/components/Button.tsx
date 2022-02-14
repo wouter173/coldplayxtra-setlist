@@ -7,12 +7,12 @@ type Props = {
 };
 
 export default function Button(props: PropsWithChildren<Props>) {
-  const color = props.disabled ? 'border-accent-disabled' : 'border-accent-main active:border-accent-active';
+  const color = props.disabled ? 'opacity-60 cursor-default' : 'active:border-accent-active cursor-pointer';
   return (
     <button
       onClick={props.onClick}
       disabled={props.disabled}
-      className={`${props.className} ${color} mx-auto my-4 block w-full border py-6 px-4 font-body text-xl font-extrabold uppercase text-accent-main transition-colors`}
+      className={`${props.className} ${color} border-secondary-pink text-secondary-pink block border p-4 font-body text-lg font-bold uppercase transition-colors`}
     >
       {props.children}
     </button>

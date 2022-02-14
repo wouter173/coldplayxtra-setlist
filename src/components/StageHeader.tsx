@@ -49,7 +49,7 @@ export default function StageHeader() {
       ) : null}
       <h2 className="ml-2 text-sm font-bold uppercase underline">{stage.name}</h2>
       <div className="relative ml-auto">
-        <DotsVerticalIcon className=" h-6 w-6 text-gray-400" onClick={() => setMenuOpen(true)} />
+        <DotsVerticalIcon className=" h-6 w-6 cursor-pointer text-gray-400" onClick={() => setMenuOpen(true)} />
         {menuOpen ? <Menu items={menuItems} onDismiss={() => setMenuOpen(false)}></Menu> : null}
       </div>
     </div>

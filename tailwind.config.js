@@ -11,6 +11,7 @@ module.exports = {
         secondary: {
           purple: '#B3AAB8',
           blue: '#E5E5FF',
+          pink: '#FFC0CB',
         },
       },
       fontFamily: {
