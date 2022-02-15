@@ -3,7 +3,7 @@ import { GenerateID } from '../utils/IdGenerator';
 export const template = () => [
   {
     id: GenerateID(),
-    name: 'A Stage',
+    name: 'Main Stage',
     songs: [
       { id: GenerateID(), name: 'Music Of The Spheres', customInfo: [] },
       { id: GenerateID(), name: 'Higher Power', customInfo: [] },
@@ -25,7 +25,7 @@ export const template = () => [
   },
   {
     id: GenerateID(),
-    name: 'A Stage',
+    name: 'Main Stage',
     songs: [
       { id: GenerateID(), name: 'Magic', customInfo: ['acoustic'] },
       { id: GenerateID(), name: 'Yellow', customInfo: ['acoustic'] },
