@@ -1,6 +1,5 @@
-import { DownloadIcon } from '@heroicons/react/outline';
-import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Button from '../components/Button';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
@@ -41,9 +40,8 @@ export default function Finish() {
         <nav className="g m-4 flex">
           <Button onClick={() => router.back()}>back</Button>
           <div className="flerx-col ml-auto flex">
-            {canShare ? <Button onClick={() => share()}>share</Button> : null}
-            <Button className="ml-2" onClick={() => download()}>
-              {canShare ? <DownloadIcon className="h-6 w-6" /> : <>Download</>}
+            <Button className="ml-2" onClick={() => (canShare ? share() : download())}>
+              Download
             </Button>
           </div>
         </nav>
