@@ -28,9 +28,9 @@ export default function Canvas(props: Props) {
     ctx.translate(w * 0.08, h * 0.07);
     ctx.fillStyle = '#000000';
 
-    const headline = `${state.name[0]}'s setlist for: coldplay music of the spheres world tour in 2022 -`;
+    const headline = `${state.name[0]}'s setlist for coldplay music of the spheres world tour 2022 -`;
     lineoffset += drawHeader(headline, ctx, lineoffset);
-    lineoffset += drawHeader('curated at Coldplayxtra.com/setlist', ctx, lineoffset);
+    lineoffset += drawHeader('curated at setlist.coldplayxtra.com', ctx, lineoffset);
     lineoffset += 30;
 
     (state.stages[0] as stageType[]).map((stage) => {
