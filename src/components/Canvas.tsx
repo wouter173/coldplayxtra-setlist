@@ -81,9 +81,9 @@ export default function Canvas(props: Props) {
   };
 
   useEffect(() => {
-    render();
+    if (bgImageRef.current != null) bgImageRef.current.onload = render;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [bgImageRef]);
 
   const drawUrl = (url: string, widthoffset: number, ctx: CanvasRenderingContext2D, lineoffset: number) => {
     ctx.font = canvasStyles.headLine.font;

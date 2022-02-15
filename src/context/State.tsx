@@ -1,5 +1,4 @@
 import React, { createContext, Dispatch, PropsWithChildren, SetStateAction, useEffect, useState } from 'react';
-import { template } from '../data/template';
 
 type contextType<T> = { [key: string]: [T, Dispatch<SetStateAction<T>>] };
 export type songType = {
@@ -13,7 +12,7 @@ const context = createContext<contextType<any>>({});
 
 const Provider = (props: PropsWithChildren<{}>) => {
   const [name, setName] = useState('');
-  const [stages, setStages] = useState<stageType[]>(template());
+  const [stages, setStages] = useState<stageType[]>([]);
 
   useEffect(() => {
     const stagesData = localStorage.getItem('stages');
