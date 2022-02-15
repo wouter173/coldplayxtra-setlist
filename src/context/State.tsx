@@ -13,7 +13,7 @@ const context = createContext<contextType<any>>({});
 
 const Provider = (props: PropsWithChildren<{}>) => {
   const [name, setName] = useState('');
-  const [stages, setStages] = useState<stageType[]>(template());
+  const [stages, setStages] = useState<stageType[]>([]);
 
   useEffect(() => {
     const stagesData = localStorage.getItem('stages');
