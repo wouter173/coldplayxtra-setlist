@@ -82,6 +82,7 @@ export default function Canvas(props: Props) {
 
   useEffect(() => {
     render();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const drawUrl = (url: string, widthoffset: number, ctx: CanvasRenderingContext2D, lineoffset: number) => {
