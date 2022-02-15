@@ -11,7 +11,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Source+Code+Pro&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600&family=Lato:wght@700;900&family=Source+Code+Pro&display=swap"
           rel="stylesheet"
         />
       </Head>
