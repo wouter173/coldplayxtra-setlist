@@ -45,6 +45,7 @@ const Modal = (props: { title: string; onDismiss: () => void; component: JSX.Ele
     return () => {
       setActive(false);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return <></>;
 };
