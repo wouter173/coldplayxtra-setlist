@@ -12,7 +12,11 @@ export default function StageRenameModal(props: Props) {
 
   return (
     <>
-      <span className="font-mono text-sm uppercase">rename stage</span>
+      <span className="font-mono text-sm uppercase">
+        rename {'"'}
+        {props.stage.name}
+        {'"'}
+      </span>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -37,6 +41,7 @@ export default function StageRenameModal(props: Props) {
           type="submit"
           value="save"
           className="w-full bg-[#BB6BD9] p-2 text-sm font-bold uppercase text-white hover:bg-opacity-80 active:bg-opacity-80"
+          readOnly
         />
       </form>
     </>
