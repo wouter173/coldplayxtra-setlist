@@ -64,12 +64,14 @@ export default function Editor() {
                 </StageContext.Provider>
               </li>
             ))}
-            <button
-              className="m-2 text-sm font-bold uppercase text-[#9B51E0]"
-              onClick={() => addStage({ stages, setStages })}
-            >
-              +ADD STAGE...
-            </button>
+            {stages.length < 5 ? (
+              <button
+                className="m-2 text-sm font-bold uppercase text-[#9B51E0]"
+                onClick={() => addStage({ stages, setStages })}
+              >
+                +ADD STAGE...
+              </button>
+            ) : null}
           </ul>
         </div>
       </div>
