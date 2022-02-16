@@ -36,10 +36,21 @@ export const removeSong = ({ setStages, stages, stage, i }: argsType<{ i: number
 };
 
 export const moveSong = (args: argsType<{ i: number; to: number; stage: stageType }>) => {
-  const newStages = [...args.stages];
-  const stageIndex = getStage(args.stages, args.stage.id);
-  newStages[stageIndex].songs.splice(args.to, 0, newStages[stageIndex].songs.splice(args.i, 1)[0]);
-  args.setStages(newStages);
+  const { i, to, stages, stage, setStages } = args;
+  const newStages = [...stages];
+  const stageIndex = getStage(stages, stage.id);
+  if (to == -1) {
+    const newStageIndex = stageIndex - 1;
+    const song = newStages[stageIndex].songs.splice(i, 1)[0];
+    newStages[newStageIndex].songs.splice(newStages[newStageIndex].songs.length, 0, song);
+  } else if (to == stage.songs.length) {
+    const newStageIndex = stageIndex + 1;
+    const song = newStages[stageIndex].songs.splice(i, 1)[0];
+    newStages[newStageIndex].songs.splice(0, 0, song);
+  } else {
+    newStages[stageIndex].songs.splice(to, 0, newStages[stageIndex].songs.splice(i, 1)[0]);
+  }
+  setStages(newStages);
 };
 
 export const addStage = ({ stages, setStages }: argsType) => {
