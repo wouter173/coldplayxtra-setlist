@@ -136,8 +136,7 @@ export default function Selector(props: Props) {
       <div className={`${props.adder ? 'pointer-events-none' : 'pointer-events-auto'} flex`}>
         <ArrowSmUpIcon
           className={`${
-            props.adder ||
-            (stages.filter((s) => s.songs.length > 0).indexOf(stage) == 0 && stage.songs.indexOf(song) == 0)
+            props.adder || (stages.indexOf(stage) == 0 && stage.songs.indexOf(song) == 0)
               ? 'pointer-events-none text-gray-400'
               : 'cursor-pointer text-gray-600'
           } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}
@@ -148,9 +147,7 @@ export default function Selector(props: Props) {
         <ArrowSmDownIcon
           className={`${
             props.adder ||
-            (stages.filter((s) => s.songs.length > 0).indexOf(stage) ==
-              stages.filter((s) => s.songs.length > 0).length - 1 &&
-              stage.songs.indexOf(song) == stage.songs.length - 1)
+            (stages.indexOf(stage) == stages.length - 1 && stage.songs.indexOf(song) == stage.songs.length - 1)
               ? 'pointer-events-none text-gray-400'
               : 'cursor-pointer text-gray-600'
           } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}

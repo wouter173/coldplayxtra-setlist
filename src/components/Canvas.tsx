@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { context, stageType } from '../context/State';
+import FontFaceObserver from 'fontfaceobserver';
 
 type Props = {
   getData: (data: string) => void;
-  [key: string]: any;
+  className: string;
 };
 
 const canvasStyles = {
@@ -31,7 +32,11 @@ export default function Canvas(props: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const bgImageRef = useRef<HTMLImageElement>(null);
 
+  const [fontLoaded, setFontLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const render = () => {
+    console.log('render started');
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d')!;
     const w = 1200;
@@ -78,12 +83,8 @@ export default function Canvas(props: Props) {
     ctx.fillText(content, 0, 0);
 
     props.getData(canvas.toDataURL());
+    console.log('render ended');
   };
-
-  useEffect(() => {
-    if (bgImageRef.current != null) bgImageRef.current.onload = render;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bgImageRef]);
 
   const drawUrl = (url: string, widthoffset: number, ctx: CanvasRenderingContext2D, lineoffset: number) => {
     ctx.font = canvasStyles.headLine.font;
@@ -118,12 +119,29 @@ export default function Canvas(props: Props) {
     return canvasStyles.songTitle.lineheight;
   };
 
+  useEffect(() => {
+    const font = new FontFaceObserver('Hind');
+    font.load().then(() => {
+      setFontLoaded(true);
+    });
+  });
+
+  useEffect(() => {
+    if (bgImageRef.current) if (bgImageRef.current.complete) setImageLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    console.log({ fontLoaded, imageLoaded });
+    if (fontLoaded && imageLoaded) render();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fontLoaded, imageLoaded]);
+
   return (
     <>
       <div className="hidden">
         <img src="/coldplay_bg.jpg" alt="" ref={bgImageRef} />
       </div>
-      <canvas ref={canvasRef} {...props} />
+      <canvas ref={canvasRef} className={props.className} />
     </>
   );
 }
