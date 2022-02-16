@@ -43,8 +43,9 @@ export default function Editor() {
                   <StageHeader />
                   <ul>
                     {(() => {
+                      const songCount = stages.reduce((acc, cur) => (acc += cur.songs.length), 0);
                       const currentSongs =
-                        stageIndex == stages.length - 1 || stage.songs.length == 0
+                        (stageIndex == stages.length - 1 || stage.songs.length == 0) && songCount < 24
                           ? [...stage.songs, { name: '', customInfo: [], id: GenerateID() } as songType]
                           : stage.songs;
                       return currentSongs.map((song: songType, songIndex: number) => (
@@ -54,6 +55,7 @@ export default function Editor() {
                               (songIndex == stage.songs.length && stageIndex == stages.length - 1) ||
                               (stage.songs.length == 0 && stageIndex != stages.length - 1)
                             }
+                            songCountReached={songCount >= 24}
                           />
                         </SongContext.Provider>
                       ));

@@ -21,6 +21,7 @@ import StageContext, { stageContextDataType } from '../context/StageContext';
 
 interface Props {
   adder?: boolean;
+  songCountReached: boolean;
 }
 
 export default function Selector(props: Props) {
@@ -69,6 +70,10 @@ export default function Selector(props: Props) {
       },
     },
   ];
+
+  if (props.songCountReached) {
+    menuItems.splice(1, 2);
+  }
 
   return (
     <li className={`${props.adder ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
