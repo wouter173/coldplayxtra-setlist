@@ -139,8 +139,8 @@ export default function Selector(props: Props) {
             props.adder ||
             (stages.filter((s) => s.songs.length > 0).indexOf(stage) == 0 && stage.songs.indexOf(song) == 0)
               ? 'pointer-events-none text-gray-400'
-              : 'text-gray-600'
-          } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
+              : 'cursor-pointer text-gray-600'
+          } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i - 1 });
           }}
@@ -152,14 +152,19 @@ export default function Selector(props: Props) {
               stages.filter((s) => s.songs.length > 0).length - 1 &&
               stage.songs.indexOf(song) == stage.songs.length - 1)
               ? 'pointer-events-none text-gray-400'
-              : 'text-gray-600'
-          } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
+              : 'cursor-pointer text-gray-600'
+          } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i + 1 });
           }}
         />
         <div className="h-8 w-8 flex-shrink-0">
-          {song.customInfo.length > 0 ? <ChatIcon className="h-8 w-8 p-1 text-gray-400" /> : null}
+          {song.customInfo.length > 0 ? (
+            <ChatIcon
+              className="h-8 w-8 cursor-pointer rounded-sm p-1 text-gray-400 hover:bg-secondary-blue"
+              onClick={() => setCustomInfoModalOpen(true)}
+            />
+          ) : null}
         </div>
         <div className="relative h-6 w-6 flex-shrink-0 cursor-pointer py-1">
           <DotsVerticalIcon className="h-6 w-6 text-gray-400" onClick={() => setMenuOpen(true)} />
