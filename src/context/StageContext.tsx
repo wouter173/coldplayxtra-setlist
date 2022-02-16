@@ -1,11 +1,11 @@
 import { createContext, Dispatch } from 'react';
 import { stageType } from './State';
 
-type stageContextData = {
+export type stageContextDataType = {
   stage: stageType;
   stages: stageType[];
   setStages: Dispatch<stageType[]>;
 };
 
-const context = createContext<stageContextData | null>(null);
+const context = createContext<stageContextDataType | null>(null);
 export default context;

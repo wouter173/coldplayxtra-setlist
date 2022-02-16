@@ -1,11 +1,8 @@
-import { createContext, Dispatch } from 'react';
-import { songType, stageType } from './State';
+import { createContext } from 'react';
+import { songType } from './State';
 
 export type songContextDataType = {
   song: songType;
-  stage: stageType;
-  stages: stageType[];
-  setStages: Dispatch<stageType[]>;
   i: number;
 };
 

@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import SongContext, { songContextDataType } from '../context/SongContext';
+import StageContext, { stageContextDataType } from '../context/StageContext';
 import { tracks } from '../data/tracks';
 import { setSong } from '../utils/editorMethods';
 
 export default function AutoComplete() {
-  const { stage, song, i, stages, setStages } = useContext(SongContext) as songContextDataType;
+  const { stage, stages, setStages } = useContext(StageContext) as stageContextDataType;
+  const { song, i } = useContext(SongContext) as songContextDataType;
 
   return (
     <ul className="absolute z-20 mt-1 w-[80vw] bg-white shadow-xl">

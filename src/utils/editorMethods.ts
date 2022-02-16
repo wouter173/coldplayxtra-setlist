@@ -12,6 +12,7 @@ const getStage = (stages: stageType[], stageID: string): number => {
 };
 
 export const setSong = (args: argsType<{ songName?: string; i: number; stage: stageType; customInfo?: string[] }>) => {
+  console.log(args.stages);
   const newStages = [...args.stages];
   const stageIndex = getStage(args.stages, args.stage.id);
   if (args.songName != undefined) newStages[stageIndex].songs[args.i].name = args.songName;
@@ -19,10 +20,11 @@ export const setSong = (args: argsType<{ songName?: string; i: number; stage: st
   args.setStages(newStages);
 };
 
-export const addSong = ({ setStages, stages, stage, i }: argsType<{ i: number; stage: stageType }>) => {
+export const addSong = (args: argsType<{ i: number; stage: stageType; id?: string }>) => {
+  const { setStages, stages, stage, i, id } = args;
   const newStages = [...stages];
   const stageIndex = getStage(stages, stage.id);
-  newStages[stageIndex].songs.splice(i, 0, { id: GenerateID(), name: '', customInfo: [] });
+  newStages[stageIndex].songs.splice(i, 0, { id: id ? id : GenerateID(), name: '', customInfo: [] });
   setStages(newStages);
 };
 
@@ -41,10 +43,7 @@ export const moveSong = (args: argsType<{ i: number; to: number; stage: stageTyp
 };
 
 export const addStage = ({ stages, setStages }: argsType) => {
-  setStages([
-    ...stages,
-    { id: GenerateID(), name: 'new stage', songs: [{ id: GenerateID(), name: '', customInfo: [] }] },
-  ]);
+  setStages([...stages, { id: GenerateID(), name: 'new stage', songs: [] }]);
 };
 
 export const removeStage = ({ stages, setStages, stage }: argsType<{ stage: stageType }>) => {

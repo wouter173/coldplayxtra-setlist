@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Button from '../components/Button';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
+import Nav from '../components/Nav';
 
 export default function Finish() {
   const router = useRouter();
@@ -37,14 +38,14 @@ export default function Finish() {
     <div className="bg-main h-fit min-h-screen w-screen">
       <div className="h-fulll grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
         <Header />
-        <nav className="g m-4 flex">
+        <Nav>
           <Button onClick={() => router.back()}>back</Button>
           <div className="flerx-col ml-auto flex">
             <Button className="ml-2" onClick={() => (canShare ? share() : download())}>
               Download
             </Button>
           </div>
-        </nav>
+        </Nav>
         <div>
           <Canvas className="mx-auto w-full" getData={(data) => setData(data)} />
         </div>

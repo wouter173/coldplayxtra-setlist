@@ -17,13 +17,15 @@ import Menu, { menuItemType } from './Menu';
 import Modal from './Modal';
 import CustomInfoModal from './Modals/CustomInfoModal';
 import ChangeStageModal from './Modals/ChangeStageModal';
+import StageContext, { stageContextDataType } from '../context/StageContext';
 
 interface Props {
-  last?: boolean;
+  adder?: boolean;
 }
 
 export default function Selector(props: Props) {
-  const { stage, stages, setStages, i, song } = useContext(SongContext) as songContextDataType;
+  const { i, song } = useContext(SongContext) as songContextDataType;
+  const { stage, stages, setStages } = useContext(StageContext) as stageContextDataType;
   const [inputFocus, setInputFocus] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [customInfoModalOpen, setCustomInfoModalOpen] = useState<boolean>(false);
@@ -69,7 +71,7 @@ export default function Selector(props: Props) {
   ];
 
   return (
-    <li className={`${props.last ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
+    <li className={`${props.adder ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
       {changeStageModalOpen ? (
         <Modal
           title="Change stage"
@@ -115,7 +117,7 @@ export default function Selector(props: Props) {
       <div className="relative w-full">
         <input
           className="my-0 w-full rounded-none border border-b border-gray-300 bg-transparent py-2 px-3 font-bold uppercase text-black placeholder:text-gray-400"
-          placeholder={props.last ? '+ADD SONG...' : 'SONG NAME...'}
+          placeholder={props.adder ? '+ADD SONG...' : 'SONG NAME...'}
           value={song.name}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
             setSong({ stages, setStages, songName: e.target.value, i, stage });
@@ -126,15 +128,18 @@ export default function Selector(props: Props) {
           }}
           onFocus={() => {
             setInputFocus(true);
-            if (props.last) addSong({ stages, setStages, i: i + 1, stage });
+            if (props.adder) addSong({ stages, setStages, i: i + 1, stage, id: song.id });
           }}
         />
         {inputFocus && value.length != 0 ? <AutoComplete /> : <></>}
       </div>
-      <div className={`${props.last ? 'pointer-events-none' : 'pointer-events-auto'} flex`}>
+      <div className={`${props.adder ? 'pointer-events-none' : 'pointer-events-auto'} flex`}>
         <ArrowSmUpIcon
           className={`${
-            i == 0 ? 'pointer-events-none text-gray-400' : 'text-gray-600'
+            props.adder ||
+            (stages.filter((s) => s.songs.length > 0).indexOf(stage) == 0 && stage.songs.indexOf(song) == 0)
+              ? 'pointer-events-none text-gray-400'
+              : 'text-gray-600'
           } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i - 1 });
@@ -142,7 +147,10 @@ export default function Selector(props: Props) {
         />
         <ArrowSmDownIcon
           className={`${
-            i == stage.songs.length - (stages.indexOf(stage) == stages.length - 1 ? 2 : 1)
+            props.adder ||
+            (stages.filter((s) => s.songs.length > 0).indexOf(stage) ==
+              stages.filter((s) => s.songs.length > 0).length - 1 &&
+              stage.songs.indexOf(song) == stage.songs.length - 1)
               ? 'pointer-events-none text-gray-400'
               : 'text-gray-600'
           } h-8 w-8 flex-shrink-0 p-1 hover:bg-secondary-blue`}
