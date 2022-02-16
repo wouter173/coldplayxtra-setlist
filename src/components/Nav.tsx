@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from 'react';
 
 export default function Nav(props: PropsWithChildren<{}>) {
-  const [stuck, setStuck] = useState(false);
+  const [, setStuck] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
