@@ -4,14 +4,12 @@ import StageContext from '../context/StageContext';
 import { removeStage, renameStage } from '../utils/editorMethods';
 import Menu, { menuItemType } from './Menu';
 import Modal from './Modal';
-import StageRemoveModal from './Modals/StageRemoveModal';
 import StageRenameModal from './Modals/StageRenameModal';
 
 export default function StageHeader() {
   const { stages, setStages, stage } = useContext(StageContext)!;
   const [menuOpen, setMenuOpen] = useState(false);
   const [renameModalOpen, setRenameModalOpen] = useState(false);
-  const [removeModalOpen, setRemoveModalOpen] = useState(false);
 
   const menuItems: menuItemType[] = [
     {
@@ -23,7 +21,7 @@ export default function StageHeader() {
     },
     {
       action: () => {
-        setRemoveModalOpen(true);
+        if (confirm('This will remove all the songs in the stage.')) removeStage({ stages, setStages, stage });
       },
       name: 'REMOVE',
       Icon: TrashIcon,
@@ -48,21 +46,6 @@ export default function StageHeader() {
             />
           }
         />
-      ) : null}
-      {removeModalOpen ? (
-        <Modal
-          title="Remove Stage"
-          onDismiss={() => setRemoveModalOpen(false)}
-          component={
-            <StageRemoveModal
-              setModalOpen={setRemoveModalOpen}
-              onSubmit={() => {
-                removeStage({ setStages, stage, stages });
-              }}
-              stage={stage}
-            />
-          }
-        ></Modal>
       ) : null}
       <h2 className="ml-2 text-sm font-bold uppercase underline">{stage.name}</h2>
       <div className="relative ml-auto">
