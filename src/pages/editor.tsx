@@ -27,7 +27,15 @@ export default function Editor() {
         <Nav>
           <Button disabled>undo</Button>
           <Button disabled>reset</Button>
-          <Button className="ml-auto" onClick={() => router.push('/finish')}>
+          <Button
+            className="ml-auto"
+            onClick={() => {
+              const allSongs = stages.reduce((acc, cur) => [...acc, ...cur.songs], [] as songType[]);
+              if (allSongs.length != new Set(allSongs).size) {
+                if (confirm('There are duplicate songs in your list.')) router.push('/finish');
+              } else router.push('/finish');
+            }}
+          >
             finish
           </Button>
         </Nav>

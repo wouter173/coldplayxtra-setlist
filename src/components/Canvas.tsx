@@ -120,15 +120,15 @@ export default function Canvas(props: Props) {
   };
 
   useEffect(() => {
-    const font = new FontFaceObserver('Hind');
-    font.load().then(() => {
+    const a = [new FontFaceObserver('Hind', { weight: 600 }).load(), new FontFaceObserver('Hind').load()];
+    Promise.all(a).then(() => {
       setFontLoaded(true);
     });
-  });
+  }, []);
 
   useEffect(() => {
     if (bgImageRef.current) if (bgImageRef.current.complete) setImageLoaded(true);
-  }, []);
+  }, [bgImageRef]);
 
   useEffect(() => {
     console.log({ fontLoaded, imageLoaded });
