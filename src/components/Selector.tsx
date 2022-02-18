@@ -2,12 +2,12 @@ import React, { ChangeEvent, useContext, useState } from 'react';
 import {
   ArrowSmDownIcon,
   ArrowSmUpIcon,
-  ChatIcon,
   DotsVerticalIcon,
   GlobeAltIcon,
   PlusCircleIcon,
   SortAscendingIcon,
   SortDescendingIcon,
+  SparklesIcon,
   TrashIcon,
 } from '@heroicons/react/outline';
 import AutoComplete from './AutoComplete';
@@ -27,10 +27,11 @@ interface Props {
 export default function Selector(props: Props) {
   const { i, song } = useContext(SongContext) as songContextDataType;
   const { stage, stages, setStages } = useContext(StageContext) as stageContextDataType;
-  const [inputFocus, setInputFocus] = useState<boolean>(false);
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const [customInfoModalOpen, setCustomInfoModalOpen] = useState<boolean>(false);
-  const [changeStageModalOpen, setChangeStageModalOpen] = useState<boolean>(false);
+  const [inputFocus, setInputFocus] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [customInfoModalOpen, setCustomInfoModalOpen] = useState(false);
+  const [changeStageModalOpen, setChangeStageModalOpen] = useState(false);
+  const [moved, setMoved] = useState(false);
   const [value, setValue] = useState<string>('');
 
   const menuItems: menuItemType[] = [
@@ -76,7 +77,12 @@ export default function Selector(props: Props) {
   }
 
   return (
-    <li className={`${props.adder ? 'opacity-40' : 'opacity-100'} flex select-none flex-row items-center py-1`}>
+    <li
+      className={`
+      ${props.adder ? 'opacity-40' : 'opacity-100'} 
+      ${moved ? 'bg-secondary-blue' : ''} 
+      flex select-none flex-row items-center py-1 transition-colors`}
+    >
       {changeStageModalOpen ? (
         <Modal
           title="Change stage"
@@ -144,9 +150,11 @@ export default function Selector(props: Props) {
             props.adder || (stages.indexOf(stage) == 0 && stage.songs.indexOf(song) == 0)
               ? 'pointer-events-none text-gray-400'
               : 'cursor-pointer text-gray-600'
-          } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}
+          } h-8 w-8 flex-shrink-0 rounded-sm p-1 sm:hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i - 1 });
+            setMoved(true);
+            setTimeout(() => setMoved(false), 300);
           }}
         />
         <ArrowSmDownIcon
@@ -155,15 +163,17 @@ export default function Selector(props: Props) {
             (stages.indexOf(stage) == stages.length - 1 && stage.songs.indexOf(song) == stage.songs.length - 1)
               ? 'pointer-events-none text-gray-400'
               : 'cursor-pointer text-gray-600'
-          } h-8 w-8 flex-shrink-0 rounded-sm p-1 hover:bg-secondary-blue`}
+          } h-8 w-8 flex-shrink-0 rounded-sm p-1 sm:hover:bg-secondary-blue`}
           onClick={() => {
             moveSong({ stages, setStages, stage, i, to: i + 1 });
+            setMoved(true);
+            setTimeout(() => setMoved(false), 300);
           }}
         />
         <div className="h-8 w-8 flex-shrink-0">
           {song.customInfo.length > 0 ? (
-            <ChatIcon
-              className="h-8 w-8 cursor-pointer rounded-sm p-1 text-gray-400 hover:bg-secondary-blue"
+            <SparklesIcon
+              className="h-8 w-8 cursor-pointer rounded-sm p-1 text-gray-400 sm:hover:bg-secondary-blue"
               onClick={() => setCustomInfoModalOpen(true)}
             />
           ) : null}
