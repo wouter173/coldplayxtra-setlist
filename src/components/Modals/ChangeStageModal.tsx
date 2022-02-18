@@ -16,7 +16,6 @@ export default function ChangeStageModal(props: Props) {
 
   return (
     <>
-      <span className="font-mono text-sm uppercase">select stage</span>
       <form
         onSubmit={(e) => {
           e.preventDefault();
