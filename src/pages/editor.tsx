@@ -49,7 +49,7 @@ export default function Editor() {
             finish
           </Button>
         </Nav>
-        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10 pb-52">
+        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10">
           <Notification hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
             Reorder, add, edit, delete add special effecs Lorem ipsum instructions for how you can do your setlist here,
             press save when you`re done.

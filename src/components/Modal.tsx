@@ -10,6 +10,7 @@ export function ModalRenderer() {
     active: [active],
     dismiss: [dismiss],
   } = useContext(ModalContext)!;
+  //TODO weird bottom padding
   if (active)
     return (
       <div className="pointer-events-none fixed z-30 h-full w-full">
