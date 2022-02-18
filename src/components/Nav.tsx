@@ -14,7 +14,7 @@ export default function Nav(props: PropsWithChildren<{}>) {
   }, [navRef]);
 
   return (
-    <nav className={`sticky -top-1 z-50 bg-[#161117]`} ref={navRef}>
+    <nav className={`sticky -top-1 z-20 bg-[#161117]`} ref={navRef}>
       <div className={`flex gap-3 p-4 transition-all`}>{props.children}</div>
     </nav>
   );

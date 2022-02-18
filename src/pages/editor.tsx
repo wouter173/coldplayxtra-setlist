@@ -26,11 +26,21 @@ export default function Editor() {
         <Header />
         <Nav>
           <Button disabled>undo</Button>
-          <Button disabled>reset</Button>
+          <Button
+            onClick={() => {
+              if (confirm('Are you sure you want to reset your setlist?')) setStages([]);
+            }}
+          >
+            reset
+          </Button>
           <Button
             className="ml-auto"
             onClick={() => {
-              const allSongs = stages.reduce((acc, cur) => [...acc, ...cur.songs], [] as songType[]);
+              const allSongs = stages.reduce(
+                (acc, cur) => [...acc, ...cur.songs.map((s) => s.name.toUpperCase())],
+                [] as string[]
+              );
+
               if (allSongs.length != new Set(allSongs).size) {
                 if (confirm('There are duplicate songs in your list.')) router.push('/finish');
               } else router.push('/finish');
