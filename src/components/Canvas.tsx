@@ -124,11 +124,22 @@ export default function Canvas(props: Props) {
     Promise.all(a).then(() => {
       setFontLoaded(true);
     });
-  }, []);
 
-  useEffect(() => {
-    if (bgImageRef.current) if (bgImageRef.current.complete) setImageLoaded(true);
-  }, [bgImageRef]);
+    const checkBgLoaded = (): boolean => {
+      if (bgImageRef.current)
+        if (bgImageRef.current.complete) {
+          setImageLoaded(true);
+          return true;
+        }
+      return false;
+    };
+
+    checkBgLoaded();
+
+    const interval = setInterval(() => {
+      if (checkBgLoaded()) clearInterval(interval);
+    }, 500);
+  }, []);
 
   useEffect(() => {
     console.log({ fontLoaded, imageLoaded });
