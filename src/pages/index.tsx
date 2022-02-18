@@ -35,6 +35,7 @@ const Home: NextPage = () => {
           />
           <Button
             className="mx-auto w-max border-[#FFC0CB] p-6 text-[#FFC0CB]"
+            disabled={states.name[0].length == 0}
             onClick={() => {
               if (stages.length > 0) router.push('/editor');
               else router.push('/choose');
