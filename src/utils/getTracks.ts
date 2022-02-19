@@ -105,7 +105,8 @@ async function getTracks(): Promise<Final[]> {
       nameLowercase.includes('acoustic') ||
       nameLowercase.includes('radio') ||
       name === 'Shiver (Jo Whiley Lunchtime Social)' ||
-      name === 'Talk - Francois K Dub'
+      name === 'Talk - Francois K Dub' ||
+      track.id === '45PqOIkZ9PdCjsCJQYzx9G'
     ) {
       return;
     }
@@ -117,6 +118,7 @@ async function getTracks(): Promise<Final[]> {
     if (name === 'A L I E N S') name = 'ALIENS';
     if (name === 'Èkó') name = 'Eko';
     if (name === 'O - Reprise') name = 'O (Reprise)';
+    if (track.albumName === "Viva La Vida (Prospekt's March Edition)") track.albumName = 'Viva La Vida';
 
     return final.push({
       name,
