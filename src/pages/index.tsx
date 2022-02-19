@@ -107,7 +107,7 @@ const Home: NextPage = () => {
           <div className="mx-auto sm:w-2/5">
             <HomeCard title="About your setlist 📱️">
               We would like to thank Dutch duo{' '}
-              <a className="text-blue-500 no-underline hover:underline" href="https://github.com/wouter173">
+              <a className="text-blue-500 no-underline hover:underline" href="https://wouterdb.nl">
                 Wouter de Bruijn
               </a>{' '}
               and{' '}
