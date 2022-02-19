@@ -58,7 +58,7 @@ export default function Canvas(props: Props) {
     lineoffset += drawHeader(headline, ctx, lineoffset);
     lineoffset += drawHeader('curated at', ctx, lineoffset);
     ctx.fillStyle = '#800080';
-    drawUrl('setlist.coldplayxtra.com', ctx.measureText('curated at '.toUpperCase()).width, ctx, lineoffset);
+    drawUrl('coldplayxtra.com/setlist', ctx.measureText('curated at '.toUpperCase()).width, ctx, lineoffset);
     ctx.fillStyle = '#000000';
     lineoffset += 46;
 
@@ -73,7 +73,7 @@ export default function Canvas(props: Props) {
     ctx.resetTransform();
     ctx.fillStyle;
     ctx.font = '600 36px Hind';
-    const content = 'setlist.coldplayxtra.com'.toUpperCase();
+    const content = 'coldplayxtra.com/setlist'.toUpperCase();
     const contentWidth = ctx.measureText(content).width;
     ctx.fillStyle = '#800080';
     ctx.fillRect(w - contentWidth - 50, h * 0.8, w, 80);
