@@ -4,7 +4,7 @@ import React from 'react';
 export default function Header() {
   const router = useRouter();
   return (
-    <div className="mx-auto h-40 w-10/12 pt-12 text-center">
+    <div className="mx-auto h-40 w-10/12 pt-12 text-center sm:h-60">
       <img
         onClick={() => {
           router.push('/');

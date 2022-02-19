@@ -19,10 +19,10 @@ export default function Editor() {
   const [stages, setStages] = useContext(context).stages as [stageType[], Dispatch<stageType[]>];
   const router = useRouter();
   return (
-    <div className="bg-main h-fit min-h-min w-screen">
+    <div className="bg-main h-min min-h-screen w-screen sm:overflow-auto">
       <OverlayRenderer />
       <ModalRenderer />
-      <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
+      <div className="grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
         <Header />
         <Nav>
           <Button disabled>undo</Button>
@@ -49,10 +49,11 @@ export default function Editor() {
             finish
           </Button>
         </Nav>
-        <div className="row-span-4 mx-auto h-auto w-full bg-white px-2 py-10">
+        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 sm:w-2/3 sm:p-8">
           <Notification hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
-            Reorder, add, edit, delete add special effecs Lorem ipsum instructions for how you can do your setlist here,
-            press save when you`re done.
+            {/*//TODO */}
+            Reorder, add, edit, delete add special effects Lorem ipsum instructions for how you can do your setlist
+            here, press save when you`re done.
           </Notification>
           <ul>
             {stages.map((stage: stageType, stageIndex: number) => (

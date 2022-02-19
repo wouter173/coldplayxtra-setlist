@@ -47,7 +47,7 @@ export default function Finish() {
           </div>
         </Nav>
         <div>
-          <Canvas className="mx-auto w-full" getData={(data) => setData(data)} />
+          <Canvas className="mx-auto w-full sm:w-2/3" getData={(data) => setData(data)} />
         </div>
       </div>
     </div>

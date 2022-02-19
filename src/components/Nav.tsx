@@ -18,8 +18,10 @@ export default function Nav(props: PropsWithChildren<{}>) {
   }, []);
 
   return (
-    <nav className={`${stuck ? 'bg-[#161117]' : 'bg-transparent'} sticky -top-1 z-20`} ref={navRef}>
-      <div className={`flex gap-3 p-4 transition-all`}>
+    <nav className="sticky -top-1 z-20" ref={navRef}>
+      <div
+        className={`${stuck ? 'bg-[#161117]' : 'bg-transparent'} mx-auto flex w-full gap-3 p-4 transition-all sm:w-2/3`}
+      >
         <NavSizeContext.Provider value={stuck}>{props.children}</NavSizeContext.Provider>
       </div>
     </nav>

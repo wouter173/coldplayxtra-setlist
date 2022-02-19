@@ -37,7 +37,7 @@ export default function Editor() {
     <div className="bg-main h-fit min-h-screen w-screen">
       <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content' }}>
         <Header />
-        <div className="mx-auto w-10/12 text-center text-white sm:mt-10">
+        <div className="mx-auto w-10/12 text-center text-white">
           <h2 className="mt-4 text-3xl font-bold uppercase">Hey, {name} 👋</h2>
           <span className="mb-8 block">how would you like to build your setlist?</span>
         </div>
