@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <Header />
         <div className="mx-auto w-10/12 pt-12 pb-24 sm:w-2/5">
           <h2 className="my-10 text-center text-lg text-white">
-            Please enter your first name, <br />
+            Please enter your first name <br />
             or your @name, whichever you prefer! 👇
           </h2>
           <Input
@@ -106,7 +106,15 @@ const Home: NextPage = () => {
           </div>
           <div className="mx-auto sm:w-2/5">
             <HomeCard title="About your setlist 📱️">
-              We would like to thank Dutch duo @wouter and @sting for bringing the tool to life
+              We would like to thank Dutch duo{' '}
+              <a className="text-blue-500 no-underline hover:underline" href="https://github.com/wouter173">
+                Wouter de Bruijn
+              </a>{' '}
+              and{' '}
+              <a className="text-blue-500 no-underline hover:underline" href="https://twitter.com/stingalleman">
+                @stingalleman
+              </a>{' '}
+              for bringing the tool to life
             </HomeCard>
           </div>
         </div>
