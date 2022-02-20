@@ -14,8 +14,8 @@ export function ModalRenderer() {
   if (active)
     return (
       <div className="pointer-events-none fixed z-30 h-full w-full">
-        <Overlay className="!z-30 bg-black bg-opacity-10" action={() => dismiss()} />
-        <div className="pointer-events-auto absolute top-1/2 left-1/2 h-min w-max max-w-[100vw] -translate-x-1/2 -translate-y-1/2 transform bg-white p-8">
+        <Overlay className="!z-30 bg-black bg-opacity-40" action={() => dismiss()} />
+        <div className="pointer-events-auto absolute top-1/2 left-1/2 h-min w-full -translate-x-1/2 -translate-y-1/2 transform bg-white p-8 sm:w-max sm:max-w-[100vw]">
           <div className="flex w-full">
             <h2 className="mr-20 text-2xl font-bold uppercase">{title}</h2>
             <button className="ml-auto w-8" onClick={() => dismiss()}>
