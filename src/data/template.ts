@@ -29,7 +29,6 @@ export const template = () => [
     songs: [
       { id: GenerateID(), name: 'Magic', customInfo: ['acoustic'] },
       { id: GenerateID(), name: 'Yellow', customInfo: ['acoustic'] },
-      { id: GenerateID(), name: 'Nothingman', customInfo: ['cover'] },
       { id: GenerateID(), name: 'My Universe', customInfo: [] },
       { id: GenerateID(), name: 'A Sky Full of Stars', customInfo: [] },
       { id: GenerateID(), name: 'Coloratura', customInfo: [] },
