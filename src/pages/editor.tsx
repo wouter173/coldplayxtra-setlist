@@ -99,7 +99,7 @@ export default function Editor() {
                 className="m-2 text-sm font-bold uppercase text-[#9B51E0]"
                 onClick={() => addStage({ stages, setStages })}
               >
-                +ADD STAGE...
+                + ADD STAGE...
               </button>
             ) : null}
           </ul>
