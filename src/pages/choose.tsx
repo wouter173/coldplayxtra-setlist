@@ -1,7 +1,7 @@
-import { DocumentAddIcon, ViewListIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
 import React, { ReactNode, useContext } from 'react';
 import Header from '../components/Header';
+import { AddListIcon, NumberedListIcon } from '../components/Icons';
 import { context } from '../context/State';
 import { template } from '../data/template';
 
@@ -38,7 +38,7 @@ export default function Editor() {
       <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content' }}>
         <Header />
         <div className="mx-auto w-10/12 text-center text-white">
-          <h2 className="mt-4 text-3xl font-bold uppercase">Hey, {name} 👋</h2>
+          <h2 className="mt-4 mb-2 text-3xl font-bold uppercase">Hey, {name} 👋</h2>
           <span className="mb-8 block">how would you like to build your setlist?</span>
         </div>
         <div className="mx-auto w-11/12 sm:mt-10 sm:w-2/5">
@@ -48,7 +48,7 @@ export default function Editor() {
               router.push('/editor');
             }}
             img="/template_preview.png"
-            Icon={<ViewListIcon className="mr-1 h-6 w-6" />}
+            Icon={<NumberedListIcon className="mr-4 h-6 w-6" />}
             text="Use a template"
           />
 
@@ -58,7 +58,7 @@ export default function Editor() {
               router.push('/editor');
             }}
             img="/blank_preview.png"
-            Icon={<DocumentAddIcon className="mr-1 h-6 w-6" />}
+            Icon={<AddListIcon className="mr-4 h-6 w-6" />}
             text="Blank canvas"
           />
         </div>

@@ -8,7 +8,7 @@ import { context } from '../context/State';
 
 const HomeCard = ({ title, className, children }: PropsWithChildren<{ title?: string; className?: string }>) => (
   <div className={`${className} mx-auto w-11/12 bg-white bg-opacity-5 p-6 text-white sm:w-full sm:p-6`}>
-    {title ? <h3 className="font-mono text-2xl font-bold uppercase sm:mb-4">{title}</h3> : null}
+    {title ? <h3 className="mb-3 font-mono text-2xl font-bold uppercase sm:mb-4">{title}</h3> : null}
     <p className="font-mono">{children}</p>
   </div>
 );
