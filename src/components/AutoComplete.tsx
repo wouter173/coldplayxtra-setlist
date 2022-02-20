@@ -9,11 +9,11 @@ export default function AutoComplete() {
   const { song, i } = useContext(SongContext) as songContextDataType;
 
   return (
-    <div className="absolute z-20 mt-1 h-[calc(80px*10)] w-[80vw] sm:w-full">
+    <div className="absolute z-20 mt-1 h-[calc(80px*4)] w-[80vw] sm:w-full">
       <ul className="w-full bg-white shadow-xl">
         {tracks
           .filter((track) => track.name.toUpperCase().includes(song.name.toUpperCase()))
-          .slice(0, 10)
+          .slice(0, 4)
           .map((track) => {
             let artwork;
             if (track.artwork) {
