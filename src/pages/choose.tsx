@@ -3,6 +3,7 @@ import React, { ReactNode, useContext } from 'react';
 import Header from '../components/Header';
 import { AddListIcon, NumberedListIcon } from '../components/Icons';
 import { context } from '../context/State';
+import { blank } from '../data/blank';
 import { template } from '../data/template';
 
 const ChooseButton = (props: { onClick: () => void; img?: string; Icon?: ReactNode; text: string }) => {
@@ -57,7 +58,7 @@ export default function Editor() {
           <ChooseButton
             onClick={() => {
               setChoice('blank');
-              setStages([]);
+              setStages(blank());
               router.push('/editor');
             }}
             img="/blank_preview.png"

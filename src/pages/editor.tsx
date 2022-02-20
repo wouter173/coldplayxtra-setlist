@@ -1,4 +1,4 @@
-import React, { Dispatch, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Header from '../components/Header';
 import Notification from '../components/Notification';
 import Selector from '../components/Selector';
@@ -13,10 +13,14 @@ import Button from '../components/Button';
 import { useRouter } from 'next/router';
 import { GenerateID } from '../utils/IdGenerator';
 import Nav from '../components/Nav';
+import { blank } from '../data/blank';
+import { template } from '../data/template';
 
 export default function Editor() {
   const [notificationHidden, setNotificationHidden] = useState(false);
-  const [stages, setStages] = useContext(context).stages as [stageType[], Dispatch<stageType[]>];
+  const states = useContext(context);
+  const [stages, setStages] = states.stages;
+  const [choice] = states.choice;
   const router = useRouter();
   return (
     <div className="bg-main h-min min-h-screen w-screen sm:overflow-auto">
@@ -34,7 +38,8 @@ export default function Editor() {
           </Button>
           <Button
             onClick={() => {
-              if (confirm('Are you sure you want to reset your setlist?')) setStages([]);
+              if (confirm('Are you sure you want to reset your setlist?'))
+                setStages(choice == 'blank' ? blank() : template());
             }}
           >
             reset
@@ -43,7 +48,7 @@ export default function Editor() {
             className="ml-auto"
             onClick={() => {
               const allSongs = stages.reduce(
-                (acc, cur) => [...acc, ...cur.songs.map((s) => s.name.toUpperCase())],
+                (acc: string[], cur: stageType) => [...acc, ...cur.songs.map((s) => s.name.toUpperCase())],
                 [] as string[]
               );
 
@@ -68,7 +73,7 @@ export default function Editor() {
                   <StageHeader />
                   <ul>
                     {(() => {
-                      const songCount = stages.reduce((acc, cur) => (acc += cur.songs.length), 0);
+                      const songCount = stages.reduce((acc: number, cur: stageType) => (acc += cur.songs.length), 0);
                       const currentSongs =
                         (stageIndex == stages.length - 1 || stage.songs.length == 0) && songCount < 24
                           ? [...stage.songs, { name: '', customInfo: [], id: GenerateID() } as songType]
