@@ -38,7 +38,7 @@ export default function Editor() {
           </Button>
           <Button
             onClick={() => {
-              if (confirm('Are you sure you want to reset your setlist?'))
+              if (confirm('Are you sure you want to reset your setlist? All changes will be lost.'))
                 setStages(choice == 'blank' ? blank() : template());
             }}
           >
