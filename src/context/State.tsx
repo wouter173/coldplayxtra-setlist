@@ -12,14 +12,17 @@ const context = createContext<contextType<any>>({});
 
 const Provider = (props: PropsWithChildren<{}>) => {
   const [name, setName] = useState('');
+  const [choice, setChoice] = useState('');
   const [stages, setStages] = useState<stageType[]>([]);
 
   useEffect(() => {
     const stagesData = localStorage.getItem('stages');
     const nameData = localStorage.getItem('name');
+    const choiceData = localStorage.getItem('name');
 
     if (stagesData != null) setStages(JSON.parse(stagesData));
     if (nameData != null) setName(JSON.parse(nameData));
+    if (choiceData != null) setChoice(JSON.parse(choiceData));
   }, []);
 
   useEffect(() => {
@@ -30,8 +33,14 @@ const Provider = (props: PropsWithChildren<{}>) => {
     localStorage.setItem('stages', JSON.stringify(stages));
   }, [stages]);
 
+  useEffect(() => {
+    localStorage.setItem('choice', JSON.stringify(choice));
+  }, [choice]);
+
   return (
-    <context.Provider value={{ name: [name, setName], stages: [stages, setStages] }}>{props.children}</context.Provider>
+    <context.Provider value={{ name: [name, setName], stages: [stages, setStages], choice: [choice, setChoice] }}>
+      {props.children}
+    </context.Provider>
   );
 };
 

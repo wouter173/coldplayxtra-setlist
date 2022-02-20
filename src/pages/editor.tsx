@@ -25,7 +25,13 @@ export default function Editor() {
       <div className="grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
         <Header />
         <Nav>
-          <Button disabled>undo</Button>
+          <Button
+            onClick={() => {
+              router.back();
+            }}
+          >
+            back
+          </Button>
           <Button
             onClick={() => {
               if (confirm('Are you sure you want to reset your setlist?')) setStages([]);

@@ -30,6 +30,7 @@ const ChooseButton = (props: { onClick: () => void; img?: string; Icon?: ReactNo
 export default function Editor() {
   const router = useRouter();
   const states = useContext(context);
+  const [, setChoice] = states.choice;
   const [, setStages] = states.stages;
   const [name] = states.name;
 
@@ -44,6 +45,7 @@ export default function Editor() {
         <div className="mx-auto w-11/12 sm:mt-10 sm:w-2/5">
           <ChooseButton
             onClick={() => {
+              setChoice('template');
               setStages(template());
               router.push('/editor');
             }}
@@ -54,6 +56,7 @@ export default function Editor() {
 
           <ChooseButton
             onClick={() => {
+              setChoice('blank');
               setStages([]);
               router.push('/editor');
             }}
