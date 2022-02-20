@@ -15,11 +15,6 @@ export default function AutoComplete() {
           .filter((track) => track.name.toUpperCase().includes(song.name.toUpperCase()))
           .slice(0, 4)
           .map((track) => {
-            let artwork;
-            if (track.artwork) {
-              artwork = <img className="h-14 w-14" alt={track.album + ' album cover'} src={track.artwork} />;
-            }
-
             return (
               <li key={track.name} className="min-h-20 w-full">
                 <button
@@ -29,10 +24,12 @@ export default function AutoComplete() {
                   className="w-full border-b border-gray-200 py-2 px-3 hover:bg-secondary-blue"
                 >
                   <div className="flex items-center">
-                    {artwork}
+                    {track.artwork ? (
+                      <img className="h-12 w-12" alt={track.album + ' album cover'} src={track.artwork} />
+                    ) : null}
                     <div className="px-3 py-2 text-left">
-                      <span className="text-base font-bold uppercase text-black">{track.name}</span>
-                      <span className="block text-sm uppercase text-gray-500">{track.album}</span>
+                      <span className="text-sm font-bold uppercase text-black">{track.name}</span>
+                      <span className="block text-xs uppercase text-gray-500">{track.album}</span>
                     </div>
                   </div>
                 </button>
