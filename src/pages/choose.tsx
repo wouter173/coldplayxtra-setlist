@@ -15,7 +15,7 @@ const ChooseButton = (props: { onClick: () => void; img?: string; Icon?: ReactNo
           <img
             src={img}
             alt="preview image"
-            className="w-full border-x border-t border-secondary-pink after:absolute after:block after:h-full after:w-full  after:bg-opacity-10"
+            className="w-full border-x border-t border-secondary-pink object-cover after:absolute after:block after:h-full  after:w-full after:bg-opacity-10 sm:h-52"
           />
           <div className="absolute top-0 left-0 h-full w-full bg-[#FEC0FF] bg-opacity-20"></div>
         </div>
@@ -43,7 +43,7 @@ export default function Editor() {
           <h2 className="mt-4 mb-2 text-3xl font-bold uppercase">Hey, {name} 👋</h2>
           <span className="mb-8 block">how would you like to build your setlist?</span>
         </div>
-        <div className="mx-auto w-11/12 sm:mt-10 sm:w-2/5">
+        <div className="mx-auto w-11/12 sm:mt-10 sm:grid sm:w-4/5 sm:grid-cols-2 sm:gap-4">
           <ChooseButton
             onClick={() => {
               setChoice('template');
