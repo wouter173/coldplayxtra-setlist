@@ -1,5 +1,7 @@
-import React, { Dispatch, useState } from 'react';
+import React, { Dispatch, useContext, useState } from 'react';
 import { stageType } from '../../context/State';
+import { context as State } from '../../context/State';
+import { GenerateID } from '../../utils/IdGenerator';
 
 type Props = {
   onSubmit: (out: string) => void;
@@ -9,6 +11,9 @@ type Props = {
 
 export default function StageRenameModal(props: Props) {
   const [name, setName] = useState(props.stage.name);
+  const [otherValue, setOtherValue] = useState('');
+  const [stages] = useContext(State).stages;
+  const stageNames = new Set<string>(stages.map((s: stageType) => s.name));
 
   return (
     <>
@@ -20,17 +25,36 @@ export default function StageRenameModal(props: Props) {
         }}
       >
         <div className="my-6 flex flex-col">
-          <label htmlFor="name" className="text-sm font-bold uppercase">
-            Name
-          </label>
-          <input
-            className="border-b-2 border-[#BB6BD9] bg-gray-100 p-2"
-            type="text"
-            placeholder="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            id="name"
-          />
+          <ul>
+            {Array.from<string>(stageNames).map((listName: string) => (
+              <li key={GenerateID()}>
+                <input type="radio" id={listName} checked={listName == name} onChange={() => setName(listName)} />
+                <label className="ml-2 font-bold uppercase" htmlFor={listName}>
+                  {listName}
+                </label>
+              </li>
+            ))}
+
+            <li>
+              <input type="radio" id="other" checked={name == otherValue} onChange={() => setName(otherValue)} />
+              <label htmlFor="other" className="ml-2 font-bold uppercase">
+                other
+              </label>
+              {name == otherValue ? (
+                <input
+                  className="block w-full border-b-2 border-[#BB6BD9] bg-gray-100 p-2"
+                  type="text"
+                  placeholder="name"
+                  value={otherValue}
+                  onChange={(e) => {
+                    setOtherValue(e.target.value);
+                    setName(e.target.value);
+                  }}
+                  id="name"
+                />
+              ) : null}
+            </li>
+          </ul>
         </div>
         <input
           type="submit"
