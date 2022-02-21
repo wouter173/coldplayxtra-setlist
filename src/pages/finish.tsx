@@ -7,8 +7,8 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 const ClickButton = ({ name, href }: { name: string; href: string }) => (
-  <li className="w-full border border-secondary-pink py-4 text-center">
-    <a href={href} className="block h-full w-full text-lg font-bold uppercase text-secondary-pink">
+  <li className="w-full border border-secondary-pink text-center">
+    <a href={href} className="block h-full w-full py-4 text-lg font-bold uppercase text-secondary-pink">
       {name}
     </a>
   </li>
@@ -58,9 +58,9 @@ export default function Finish() {
             </Button>
           </div>
         </Nav>
-        <div className="h-[calc(100vw/1200*1500)] w-full bg-purple-900 bg-opacity-10">
+        <div className="mx-auto h-[calc(100vw/1200*1500)] w-full bg-purple-900 bg-opacity-10 sm:h-[calc(66vw/1200*1500)] sm:w-2/3">
           {data == '' ? <p className="mt-16 text-center text-white opacity-70">rendering...</p> : null}
-          <Canvas className="mx-auto w-full sm:w-2/3" getData={(data) => setData(data)} />
+          <Canvas className="w-full" getData={(data) => setData(data)} />
         </div>
         <ul className="mx-auto mt-6 mb-16 flex w-10/12 flex-col gap-4 sm:w-1/4">
           <ClickButton name="Buy MOTS tickets ⚡️" href="" />

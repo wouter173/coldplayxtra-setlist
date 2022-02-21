@@ -15,6 +15,7 @@ import { GenerateID } from '../utils/IdGenerator';
 import Nav from '../components/Nav';
 import { blank } from '../data/blank';
 import { template } from '../data/template';
+import Footer from '../components/Footer';
 
 export default function Editor() {
   const [notificationHidden, setNotificationHidden] = useState(false);
@@ -26,7 +27,7 @@ export default function Editor() {
     <div className="bg-main h-min min-h-screen w-screen sm:overflow-auto">
       <OverlayRenderer />
       <ModalRenderer />
-      <div className="grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
+      <div className="grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content min-content' }}>
         <Header />
         <Nav>
           <Button
@@ -47,20 +48,29 @@ export default function Editor() {
           <Button
             className="ml-auto"
             onClick={() => {
-              const allSongs = stages.reduce(
-                (acc: string[], cur: stageType) => [...acc, ...cur.songs.map((s) => s.name.toUpperCase())],
-                [] as string[]
+              const allSongs: songType[] = stages.reduce(
+                (acc: songType[], cur: stageType) => [...acc, ...cur.songs],
+                []
               );
+              const allSongNames = allSongs.map((s) => s.name.toUpperCase());
+              const emptySongs = allSongs.filter((s) => s.name == '');
 
-              if (allSongs.length != new Set(allSongs).size) {
-                if (confirm('There are duplicate songs in your list.')) router.push('/finish');
-              } else router.push('/finish');
+              if (allSongNames.length != new Set(allSongNames).size) {
+                if (!confirm('There are duplicate songs in your list.')) return;
+              }
+
+              if (emptySongs.length > 0) {
+                alert('There are empty items in your setlist, please remove or add a song in this spot.');
+                document.getElementById(emptySongs[0].id)?.focus();
+                return;
+              }
+              router.push('/finish');
             }}
           >
             finish
           </Button>
         </Nav>
-        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 sm:w-2/3 sm:p-8">
+        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 !pb-16 sm:w-2/3 sm:p-8">
           <Notification hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
             {/*//TODO */}
             Reorder, add, edit, delete add special effects Lorem ipsum instructions for how you can do your setlist
@@ -110,6 +120,9 @@ export default function Editor() {
               </button>
             ) : null}
           </ul>
+        </div>
+        <div className="mt-20">
+          <Footer />
         </div>
       </div>
     </div>
