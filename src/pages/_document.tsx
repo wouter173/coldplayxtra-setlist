@@ -25,7 +25,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body>
+      <body style={{ backgroundColor: '#111' }}>
         <Main />
         <NextScript />
       </body>
