@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html style={{ background: '#111' }}>
       <Head>
         {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
         <title>Coldplayxtra - Setlist</title>
