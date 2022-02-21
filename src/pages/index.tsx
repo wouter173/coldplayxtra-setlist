@@ -2,14 +2,15 @@ import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { PropsWithChildren, useContext } from 'react';
 import Button from '../components/Button';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Input from '../components/Input';
 import { context } from '../context/State';
 
 const HomeCard = ({ title, className, children }: PropsWithChildren<{ title?: string; className?: string }>) => (
   <div className={`${className} mx-auto w-11/12 bg-white bg-opacity-5 p-6 text-white sm:w-full sm:p-6`}>
-    {title ? <h3 className="mb-3 font-mono text-2xl font-bold uppercase sm:mb-4">{title}</h3> : null}
-    <p className="font-mono">{children}</p>
+    {title ? <h3 className="mb-3 font-mono text-xl font-bold uppercase sm:mb-4">{title}</h3> : null}
+    <p className="font-mono text-sm">{children}</p>
   </div>
 );
 
@@ -47,8 +48,8 @@ const Home: NextPage = () => {
         </div>
         <div>
           <div
-            className="sm:mx-auto sm:mb-32 sm:grid sm:w-3/5 sm:gap-3"
-            style={{ gridTemplateColumns: '1rem 26rem 1rem auto', gridTemplateRows: '3rem auto auto 1rem' }}
+            className="sm:mx-auto sm:mb-32 sm:grid sm:w-1/2 sm:gap-3"
+            style={{ gridTemplateColumns: '1rem 1fr 1rem auto', gridTemplateRows: '0.5rem auto auto 0.5rem' }}
           >
             <HomeCard title="Welcome 👋" className="sm:col-span-3 sm:col-start-1 sm:row-span-2 sm:row-start-1">
               In anticipation of Coldplay`s upcomming Music of the Spheres World Tour, we thought it would be fun to
@@ -74,7 +75,7 @@ const Home: NextPage = () => {
             <br />
             2. Select either a template to work with, or a blank canvas to start from scratch
           </HomeCard>
-          <div className="relative h-44 w-full sm:mx-auto sm:mb-10 sm:-mt-4 sm:h-64 sm:w-[30%]">
+          <div className="relative h-44 w-full sm:mx-auto sm:mb-4 sm:-mt-4 sm:h-64 sm:w-[30%]">
             <img
               src="/preview_1.png"
               alt="preview of the tool"
@@ -90,7 +91,7 @@ const Home: NextPage = () => {
             4. You can add sections that note where the song will be played, such as the Main-stage, B-Stage and
             C-Stages of the venue
           </HomeCard>
-          <div className="mb-10 sm:mx-auto sm:mb-48 sm:grid sm:w-3/5" style={{ gridTemplateColumns: '1fr 1rem 1fr' }}>
+          <div className="mb-10 sm:mx-auto sm:grid sm:w-3/5" style={{ gridTemplateColumns: '1fr 1rem 1fr' }}>
             <img
               src="/preview_2.png"
               alt="preview of the tool"
@@ -104,7 +105,7 @@ const Home: NextPage = () => {
               6. Share your setlist with friends on Social Media
             </HomeCard>
           </div>
-          <div className="mx-auto sm:w-2/5">
+          <div className="mx-auto mb-28 sm:w-2/5">
             <HomeCard title="About your setlist 📱️">
               We would like to thank Dutch duo{' '}
               <a className="text-blue-500 no-underline hover:underline" href="https://wouterdb.nl">
@@ -119,6 +120,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

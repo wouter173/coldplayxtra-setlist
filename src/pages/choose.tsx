@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { ReactNode, useContext } from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { AddListIcon, NumberedListIcon } from '../components/Icons';
 import { context } from '../context/State';
@@ -37,13 +38,13 @@ export default function Editor() {
 
   return (
     <div className="bg-main h-fit min-h-screen w-screen">
-      <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content' }}>
+      <div className="grid h-full w-full" style={{ gridTemplateRows: 'min-content max-content min-content' }}>
         <Header />
         <div className="mx-auto w-10/12 text-center text-white">
           <h2 className="mt-4 mb-2 text-3xl font-bold uppercase">Hey, {name} 👋</h2>
           <span className="mb-8 block">how would you like to build your setlist?</span>
         </div>
-        <div className="mx-auto w-11/12 sm:mt-10 sm:grid sm:w-4/5 sm:grid-cols-2 sm:gap-4">
+        <div className="mx-auto mb-32 w-11/12 sm:mt-10 sm:grid sm:w-4/5 sm:grid-cols-2 sm:gap-4">
           <ChooseButton
             onClick={() => {
               setChoice('template');
@@ -66,6 +67,7 @@ export default function Editor() {
             text="Blank canvas"
           />
         </div>
+        <Footer />
       </div>
     </div>
   );

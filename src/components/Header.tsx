@@ -1,18 +1,12 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Header() {
-  const router = useRouter();
   return (
     <div className="mx-auto h-40 w-10/12 pt-12 text-center sm:h-60">
-      <img
-        onClick={() => {
-          router.push('/');
-        }}
-        className="mx-auto h-16 sm:h-28"
-        src="/xtralogo_transparent.png"
-        alt="xtralogo_transparent"
-      />
+      <Link href="/" passHref>
+        <img className="mx-auto h-16 sm:h-28" src="/xtralogo_transparent.png" alt="coldplayxtra logo" />
+      </Link>
       <h1 className="font-mono text-xl text-secondary-pink sm:text-2xl">SETLIST MAKER</h1>
     </div>
   );

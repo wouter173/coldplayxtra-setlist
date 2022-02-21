@@ -4,6 +4,15 @@ import Button from '../components/Button';
 import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
+
+const ClickButton = ({ name, href }: { name: string; href: string }) => (
+  <li className="w-full border border-secondary-pink py-4 text-center">
+    <a href={href} className="block h-full w-full text-lg font-bold uppercase text-secondary-pink">
+      {name}
+    </a>
+  </li>
+);
 
 export default function Finish() {
   const router = useRouter();
@@ -36,19 +45,29 @@ export default function Finish() {
 
   return (
     <div className="bg-main h-fit min-h-screen w-screen">
-      <div className="h-fulll grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content' }}>
+      <div
+        className="h-fulll grid w-full"
+        style={{ gridTemplateRows: 'min-content min-content max-content min-content min-content' }}
+      >
         <Header />
         <Nav>
           <Button onClick={() => router.back()}>back</Button>
-          <div className="flerx-col ml-auto flex">
+          <div className="ml-auto">
             <Button className="ml-2" onClick={() => (canShare ? share() : download())}>
               Download
             </Button>
           </div>
         </Nav>
-        <div>
+        <div className="h-[calc(100vw/1200*1500)] w-full bg-purple-900 bg-opacity-10">
+          {data == '' ? <p className="mt-16 text-center text-white opacity-70">rendering...</p> : null}
           <Canvas className="mx-auto w-full sm:w-2/3" getData={(data) => setData(data)} />
         </div>
+        <ul className="mx-auto mt-6 mb-16 flex w-10/12 flex-col gap-4 sm:w-1/4">
+          <ClickButton name="Buy MOTS tickets ⚡️" href="" />
+          <ClickButton name="Buy us a coffe ☕️" href="" />
+          <ClickButton name="Follow us on social Media" href="" />
+        </ul>
+        <Footer />
       </div>
     </div>
   );
