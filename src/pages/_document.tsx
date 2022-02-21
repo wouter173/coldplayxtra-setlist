@@ -25,7 +25,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body style={{ backgroundColor: '#111' }}>
+      <body style={{ backgroundColor: '#111', maxWidth: '100%', overflowX: 'hidden' }}>
         <Main />
         <NextScript />
       </body>
