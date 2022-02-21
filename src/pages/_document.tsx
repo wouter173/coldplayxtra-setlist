@@ -17,7 +17,7 @@ export default function Document() {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/home-logo.png" />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
