@@ -76,7 +76,14 @@ export default function Editor() {
                       const songCount = stages.reduce((acc: number, cur: stageType) => (acc += cur.songs.length), 0);
                       const currentSongs =
                         (stageIndex == stages.length - 1 || stage.songs.length == 0) && songCount < 24
-                          ? [...stage.songs, { name: '', customInfo: [], id: GenerateID() } as songType]
+                          ? [
+                              ...stage.songs,
+                              {
+                                name: '',
+                                customInfo: { values: [], other: '', otherVisible: false },
+                                id: GenerateID(),
+                              } as songType,
+                            ]
                           : stage.songs;
                       return currentSongs.map((song: songType, songIndex: number) => (
                         <SongContext.Provider value={{ i: songIndex, song }} key={song.id}>

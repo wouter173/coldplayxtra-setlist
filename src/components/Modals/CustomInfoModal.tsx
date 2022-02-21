@@ -1,21 +1,25 @@
 import { Dispatch, useState } from 'react';
-import { songType } from '../../context/State';
+import { customInfoType, songType } from '../../context/State';
 import { tracks } from '../../data/tracks';
+
+type Props = {
+  song: songType;
+  onSubmit: (input: customInfoType) => void;
+  modalOpen: [boolean, Dispatch<boolean>];
+};
 
 const options = ['pyro', 'confetti', 'lasers', 'flames', 'streamers', 'acoustic', 'special guest', 'cover'];
 
-const CustomInfoModal = ({
-  song,
-  onSubmit,
-  modalOpen: [, setModalOpen],
-}: {
-  song: songType;
-  onSubmit: (input: string[]) => void;
-  modalOpen: [boolean, Dispatch<boolean>];
-}) => {
-  const [values, setValues] = useState<string[]>(song.customInfo);
-  const [otherVisible, setOtherVisible] = useState(values.filter((e) => !options.includes(e)).length > 0);
-  const [otherValue, setOtherValue] = useState(values.filter((e) => !options.includes(e))[0]);
+const CustomInfoModal = (props: Props) => {
+  const {
+    song,
+    onSubmit,
+    modalOpen: [, setModalOpen],
+  } = props;
+  const temp = { values: [], other: '', otherVisible: false };
+  const [values, setValues] = useState<string[]>((song.customInfo ?? temp).values);
+  const [otherVisible, setOtherVisible] = useState((song.customInfo ?? temp).otherVisible);
+  const [otherValue, setOtherValue] = useState((song.customInfo ?? temp).other);
 
   return (
     <>
@@ -26,7 +30,7 @@ const CustomInfoModal = ({
         onSubmit={(e) => {
           e.preventDefault();
           setModalOpen(false);
-          onSubmit([...values, otherValue]);
+          onSubmit({ values, other: otherValue, otherVisible: otherVisible });
         }}
       >
         <ul className="my-6">
@@ -34,7 +38,7 @@ const CustomInfoModal = ({
             <li className="my-2 flex" key={info}>
               <input
                 type="checkbox"
-                defaultChecked={song.customInfo.includes(info)}
+                defaultChecked={values.includes(info)}
                 name={info}
                 id={info}
                 className="h-5 w-5 rounded-none accent-[#BB6BD9]"
@@ -51,10 +55,10 @@ const CustomInfoModal = ({
             <div>
               <input
                 type="checkbox"
-                defaultChecked={values.filter((e) => !options.includes(e)).length > 0}
                 name="other"
                 id="other"
                 className="h-5 w-5 rounded-none accent-[#BB6BD9]"
+                checked={otherVisible}
                 onChange={(e) => setOtherVisible(e.currentTarget.checked)}
               />
               <label htmlFor="other" className="ml-2 text-sm font-bold uppercase">
@@ -65,7 +69,6 @@ const CustomInfoModal = ({
               <input
                 type="text"
                 className="w-full border-b-2 border-[#BB6BD9] bg-gray-100 p-2"
-                defaultValue={values.filter((e) => !options.includes(e))[0]}
                 onChange={(e) => setOtherValue(e.target.value)}
                 value={otherValue}
               />

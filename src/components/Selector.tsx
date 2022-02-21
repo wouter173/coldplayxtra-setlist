@@ -171,7 +171,7 @@ export default function Selector(props: Props) {
           }}
         />
         <div className="h-8 w-8 flex-shrink-0">
-          {song.customInfo.length > 0 ? (
+          {song.customInfo && (song.customInfo.values.length > 0 || song.customInfo.other != '') ? (
             <SparklesIcon
               className="h-8 w-8 cursor-pointer rounded-sm p-1 text-gray-400 sm:hover:bg-secondary-blue"
               onClick={() => setCustomInfoModalOpen(true)}

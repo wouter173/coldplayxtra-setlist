@@ -66,7 +66,13 @@ export default function Canvas(props: Props) {
       lineoffset += drawStageHeader(stage.name, ctx, lineoffset);
 
       stage.songs.map((song) => {
-        lineoffset += drawSongName(song.name, song.customInfo, ctx, lineoffset);
+        const values = [];
+        if (song.customInfo) {
+          if (song.customInfo.values.length > 0) values.push(...song.customInfo.values);
+          if (song.customInfo.otherVisible) values.push(song.customInfo.other);
+        }
+
+        lineoffset += drawSongName(song.name, values, ctx, lineoffset);
       });
     });
 
@@ -115,7 +121,7 @@ export default function Canvas(props: Props) {
     ctx.fillText(title.toUpperCase(), 0, lineoffset);
     const tw = ctx.measureText(title.toUpperCase()).width;
     ctx.font = canvasStyles.songInfo.font;
-    ctx.fillText(customInfo.join('+').toUpperCase(), tw + 10, lineoffset);
+    ctx.fillText(customInfo.join(' + ').toUpperCase(), tw + 10, lineoffset);
     return canvasStyles.songTitle.lineheight;
   };
 

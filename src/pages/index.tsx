@@ -16,7 +16,7 @@ const HomeCard = ({ title, className, children }: PropsWithChildren<{ title?: st
 const Home: NextPage = () => {
   const states = useContext(context);
   const router = useRouter();
-  const [stages] = states.stages;
+  const [choice] = states.choice;
 
   return (
     <div className="bg-main min-h-fit w-screen">
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             className="mx-auto w-max border-[#FFC0CB] p-6 text-[#FFC0CB]"
             disabled={states.name[0].length < 1 || states.name[0].length > 15}
             onClick={() => {
-              if (stages.length > 0) router.push('/editor');
+              if (choice != '') router.push('/editor');
               else router.push('/choose');
             }}
           >
