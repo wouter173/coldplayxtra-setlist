@@ -54,7 +54,7 @@ export default function Canvas(props: Props) {
     ctx.translate(48, 45);
     ctx.fillStyle = '#000000';
 
-    const headline = `${state.name[0]}'s setlist for coldplay music of the spheres world tour 2022 -`;
+    const headline = `${state.name[0]}'s setlist for coldplay music of the spheres world tour 2022`;
     lineoffset += drawHeader(headline, ctx, lineoffset);
     lineoffset += drawHeader('curated at', ctx, lineoffset);
     ctx.fillStyle = '#800080';

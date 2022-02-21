@@ -127,7 +127,7 @@ export default function Selector(props: Props) {
       ) : null}
       <div className="relative w-full">
         <input
-          className="my-0 w-full rounded-none border border-b border-gray-300 bg-transparent py-1 px-1 font-bold uppercase text-black placeholder:text-gray-400"
+          className="my-0 w-full rounded-none border border-b border-gray-300 bg-transparent py-1 px-2 font-bold uppercase text-black placeholder:text-gray-400"
           placeholder={props.adder ? '+ ADD SONG...' : 'SONG NAME...'}
           value={song.name}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
