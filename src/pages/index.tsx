@@ -49,8 +49,8 @@ const Home: NextPage = () => {
         </div>
         <div>
           <div
-            className="sm:mx-auto sm:mb-32 sm:grid sm:w-1/2 sm:gap-3"
-            style={{ gridTemplateColumns: '1rem 1fr 1rem auto', gridTemplateRows: '0.5rem auto auto 0.5rem' }}
+            className="sm:mx-auto sm:mb-32 sm:grid sm:w-min sm:gap-3"
+            style={{ gridTemplateColumns: '1rem 20rem 1rem 375px', gridTemplateRows: '0.5rem auto auto' }}
           >
             <HomeCard title="Welcome 👋" className="sm:col-span-3 sm:col-start-1 sm:row-span-2 sm:row-start-1">
               In anticipation of Coldplay`s upcoming Music of the Spheres World Tour, we thought it would be fun to
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               alt="coldplay playing music"
               className="w-full object-cover sm:col-span-2 sm:col-start-3 sm:row-span-2 sm:row-start-2 sm:h-[345px] sm:w-[375px]"
             />
-            <HomeCard className="sm:col-span-2 sm:col-start-2 sm:row-span-2 sm:row-start-3">
+            <HomeCard className="sm:col-span-2 sm:col-start-2 sm:row-span-1 sm:row-start-3">
               We had so much fun thinking about what the shows might look like, we wanted to make something that all
               fans could enjoy. So here we are… Presenting to you... the ColdplayXtra Setlist Maker!
             </HomeCard>
