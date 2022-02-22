@@ -29,7 +29,7 @@ export default function Editor() {
       <ModalRenderer />
       <div className="grid w-full" style={{ gridTemplateRows: 'min-content min-content max-content min-content' }}>
         <Header />
-        <Nav>
+        <Nav className="sm:!w-11/12 sm:!max-w-[800px]">
           <Button
             onClick={() => {
               router.push('/');
@@ -70,7 +70,7 @@ export default function Editor() {
             finish
           </Button>
         </Nav>
-        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 !pb-16 sm:w-2/3 sm:p-8 ">
+        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 !pb-16 sm:w-11/12 sm:max-w-[800px] sm:p-8 ">
           <Notification buttonText="Got it!" hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
             <span className="font-bold">HERE WE GO! ⚡️</span>
             <br />
