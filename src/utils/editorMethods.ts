@@ -14,7 +14,6 @@ const getStage = (stages: stageType[], stageID: string): number => {
 export const setSong = (
   args: argsType<{ songName?: string; i: number; stage: stageType; customInfo?: customInfoType }>
 ) => {
-  console.log(args.stages);
   const newStages = [...args.stages];
   const stageIndex = getStage(args.stages, args.stage.id);
   if (args.songName != undefined) newStages[stageIndex].songs[args.i].name = args.songName;
