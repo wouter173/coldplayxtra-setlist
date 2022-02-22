@@ -13,11 +13,11 @@ export default function Footer() {
   return (
     <footer className="mx-auto w-11/12 pb-8 sm:w-1/4">
       <ul className="mb-7 flex flex-row justify-center gap-6">
-        <ClickIcon name="twitter" href="" />
-        <ClickIcon name="instagram" href="" />
-        <ClickIcon name="facebook" href="" />
-        <ClickIcon name="youtube" href="" />
-        <ClickIcon name="twitch" href="" />
+        <ClickIcon name="twitter" href="https://twitter.com/coldplayxtra" />
+        <ClickIcon name="instagram" href="https://instagram.com/coldplayxtra" />
+        <ClickIcon name="facebook" href="https://facebook.com/coldplayxtra" />
+        <ClickIcon name="youtube" href="https://youtube.com/coldplayxtra" />
+        <ClickIcon name="twitch" href="https://twitch.tv/coldplayxtra" />
       </ul>
       <hr className="opacity-30" />
       <Link href="/" passHref>
