@@ -64,7 +64,7 @@ export default function Finish() {
         </div>
         <ul className="mx-auto mt-6 mb-16 flex w-10/12 flex-col gap-4 sm:w-1/4">
           <ClickButton name="Buy MOTS tickets ⚡️" href="" />
-          <ClickButton name="Buy us a coffe ☕️" href="" />
+          <ClickButton name="Buy us a coffee ☕️" href="" />
           <ClickButton name="Follow us on social Media" href="" />
         </ul>
         <Footer />
