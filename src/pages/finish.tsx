@@ -7,7 +7,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 const ClickButton = ({ name, href }: { name: string; href: string }) => (
-  <li className="w-full border border-secondary-pink text-center">
+  <li className="w-full border border-secondary-pink px-6 text-center">
     <a href={href} className="block h-full w-full py-4 text-lg font-bold uppercase text-secondary-pink">
       {name}
     </a>
@@ -62,10 +62,9 @@ export default function Finish() {
           {data == '' ? <p className="mt-16 text-center text-white opacity-70">rendering...</p> : null}
           <Canvas className="w-full" getData={(data) => setData(data)} />
         </div>
-        <ul className="mx-auto mt-6 mb-16 flex w-10/12 flex-col gap-4 sm:w-1/4">
-          <ClickButton name="Buy MOTS tickets ⚡️" href="" />
-          <ClickButton name="Buy us a coffee ☕️" href="" />
-          <ClickButton name="Follow us on social Media" href="" />
+        <ul className="mx-auto mt-6 mb-16 flex w-10/12 min-w-max flex-col gap-4 sm:w-1/4">
+          <ClickButton name="Buy MOTS tickets ⚡️" href="https://coldplay.com/tour" />
+          <ClickButton name="Follow us on social Media" href="https://linktr.ee/coldplayxtra" />
         </ul>
         <Footer />
       </div>
