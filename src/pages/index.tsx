@@ -17,7 +17,7 @@ const HomeCard = ({ title, className, children }: PropsWithChildren<{ title?: st
 const Home: NextPage = () => {
   const states = useContext(context);
   const router = useRouter();
-  const [choice] = states.choice;
+  // const [choice] = states.choice;
 
   return (
     <div className="bg-main min-h-fit w-screen">
