@@ -32,7 +32,7 @@ export default function Editor() {
         <Nav>
           <Button
             onClick={() => {
-              router.back();
+              router.push('/');
             }}
           >
             back

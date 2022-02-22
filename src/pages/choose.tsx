@@ -33,7 +33,7 @@ export default function Editor() {
   const router = useRouter();
   const states = useContext(context);
   const [, setChoice] = states.choice;
-  const [, setStages] = states.stages;
+  const [getStages, setStages] = states.stages;
   const [name] = states.name;
 
   return (
@@ -47,8 +47,18 @@ export default function Editor() {
         <div className="mx-auto mb-32 w-11/12 sm:mt-10 sm:grid sm:w-4/5 sm:grid-cols-2 sm:gap-4">
           <ChooseButton
             onClick={() => {
-              setChoice('template');
-              setStages(template());
+              if (!(getStages.length === 0 || getStages[0].songs.length === 0)) {
+                // there's already progress
+                if (confirm('You already have a setlist. Do you want to start over?')) {
+                  // start over
+                  setChoice('template');
+                  setStages(template());
+                }
+              } else {
+                // no progress, blank
+                setChoice('template');
+                setStages(template());
+              }
               router.push('/editor');
             }}
             img="/template_preview.png"
@@ -58,8 +68,18 @@ export default function Editor() {
 
           <ChooseButton
             onClick={() => {
-              setChoice('blank');
-              setStages(blank());
+              if (!(getStages.length === 0 || getStages[0].songs.length === 0)) {
+                // there's already progress
+                if (confirm('You already have a setlist. Do you want to start over?')) {
+                  // start over
+                  setChoice('blank');
+                  setStages(blank());
+                }
+              } else {
+                // no progress, blank
+                setChoice('blank');
+                setStages(blank());
+              }
               router.push('/editor');
             }}
             img="/blank_preview.png"

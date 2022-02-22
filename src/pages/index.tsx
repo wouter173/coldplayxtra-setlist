@@ -39,8 +39,9 @@ const Home: NextPage = () => {
             className="mx-auto w-max border-[#FFC0CB] p-6 text-[#FFC0CB]"
             disabled={states.name[0].length < 1 || states.name[0].length > 15}
             onClick={() => {
-              if (choice != '') router.push('/editor');
-              else router.push('/choose');
+              // if (choice != '') router.push('/editor');
+              // else
+              router.push('/choose');
             }}
           >
             GET STARTED
