@@ -3,6 +3,7 @@ import React, { PropsWithChildren } from 'react';
 type Props = {
   hidden?: boolean;
   onDismiss?: () => void;
+  buttonText: string;
 };
 
 export default function Notification(props: PropsWithChildren<Props>) {
@@ -14,8 +15,8 @@ export default function Notification(props: PropsWithChildren<Props>) {
     >
       {props.children}
       <div>
-        <span onClick={props.onDismiss} className="float-left mb-0 mt-4 w-fit cursor-pointer text-[#9B51E0]">
-          OKAY
+        <span onClick={props.onDismiss} className="float-left mb-0 mt-4 w-fit cursor-pointer font-bold text-[#9B51E0]">
+          {props.buttonText}
         </span>
       </div>
     </div>

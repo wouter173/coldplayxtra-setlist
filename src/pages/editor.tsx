@@ -70,11 +70,14 @@ export default function Editor() {
             finish
           </Button>
         </Nav>
-        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 !pb-16 sm:w-2/3 sm:p-8">
-          <Notification hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
-            {/*//TODO */}
-            Reorder, add, edit, delete add special effects Lorem ipsum instructions for how you can do your setlist
-            here, press save when you`re done.
+        <div className="mx-auto h-full min-h-[60vh] w-full bg-white px-2 py-10 !pb-16 sm:w-2/3 sm:p-8 ">
+          <Notification buttonText="Got it!" hidden={notificationHidden} onDismiss={() => setNotificationHidden(true)}>
+            <span className="font-bold">HERE WE GO! ⚡️</span>
+            <br />
+            <span className="font-medium">
+              To customize your setlist, use the three dotted menu to add special effects and delete items. Use the
+              arrows to reorder songs. When you’re happy, hit the finish button to render and share your setlist!
+            </span>
           </Notification>
           <ul>
             {stages.map((stage: stageType, stageIndex: number) => (

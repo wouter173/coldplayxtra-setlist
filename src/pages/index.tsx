@@ -52,8 +52,8 @@ const Home: NextPage = () => {
             style={{ gridTemplateColumns: '1rem 1fr 1rem auto', gridTemplateRows: '0.5rem auto auto 0.5rem' }}
           >
             <HomeCard title="Welcome 👋" className="sm:col-span-3 sm:col-start-1 sm:row-span-2 sm:row-start-1">
-              In anticipation of Coldplay`s upcomming Music of the Spheres World Tour, we thought it would be fun to
-              think about what the setlist might look like before big first show in Costa Rica on March 18
+              In anticipation of Coldplay`s upcoming Music of the Spheres World Tour, we thought it would be fun to
+              think about what the setlist might look like before the big first show in Costa Rica on March 18
             </HomeCard>
             <img
               src="/coldplay_bg.jpg"
@@ -62,15 +62,15 @@ const Home: NextPage = () => {
             />
             <HomeCard className="sm:col-span-2 sm:col-start-2 sm:row-span-2 sm:row-start-3">
               We had so much fun thinking about what the shows might look like, we wanted to make something that all
-              fans could enjoy. Presenting to you... the ColdplayXtra Setlist Maker!
+              fans could enjoy. So here we are… Presenting to you... the ColdplayXtra Setlist Maker!
             </HomeCard>
           </div>
           <HomeCard title="About the tool ℹ️" className="mt-10 sm:mx-auto sm:!w-2/5">
-            The ColdplayXtra Setlist Maker makes it easy for you to make your dream Coldplay setlist
+            The ColdplayXtra Setlist Maker makes it easy for you to make your dream Coldplay setlist!
             <br />
             <br />
             1. Get started by adding your name, or your @name, whatever you prefer! This will show up on your completed
-            setlist
+            setlist.
             <br />
             <br />
             2. Select either a template to work with, or a blank canvas to start from scratch
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
           </div>
           <HomeCard className="sm:mx-auto sm:mb-10 sm:!w-1/3">
             3. Select songs from the band’s discography and reorder them with ease. Customize songs with special
-            effects, such as pyro, lasers and of course, confetti.
+            effects, such as pyro, lasers and of course, confetti. Lots of confetti…
             <br />
             <br />
             4. You can add sections that note where the song will be played, such as the Main-stage, B-Stage and
@@ -98,16 +98,20 @@ const Home: NextPage = () => {
               className="border-y border-y-secondary-pink sm:col-span-2 sm:col-start-2 sm:row-start-1 sm:my-auto sm:border sm:border-secondary-pink"
             />
             <HomeCard className="sm:col-span-2 sm:col-start-1 sm:row-start-1">
-              5. When happy with the order and contents of your setlist, you can render a beautiful image that looks
-              quite similar to the setlists seen on-stage
+              5. When happy with the order and contents of your setlist, you can render an image that looks quite
+              similar to the setlists seen on-stage
               <br />
               <br />
-              6. Share your setlist with friends on Social Media
+              6. Share your setlist with friends on Social Media using #MOTSsetlist and tagging @coldplayxtra.
+              <br />
+              <br />
+              If you correctly predict the setlist and share before March 14th, you could win yourself a bundle of
+              Coldplay goodies 🎉
             </HomeCard>
           </div>
           <div className="mx-auto mb-28 sm:w-2/5">
             <HomeCard title="About your setlist 📱️">
-              We would like to thank Dutch duo{' '}
+              The ColdplayXtra team would like to thank Dutch duo{' '}
               <a className="text-blue-500 no-underline hover:underline" href="https://wouterdb.nl">
                 Wouter de Bruijn
               </a>{' '}
@@ -115,7 +119,8 @@ const Home: NextPage = () => {
               <a className="text-blue-500 no-underline hover:underline" href="https://twitter.com/stingalleman">
                 @stingalleman
               </a>{' '}
-              for bringing the tool to life
+              for their help and assistance in bringing the tool to life. We have a few updates planned that are on the
+              way. We’ll keep you posted with any updates on our socials!
             </HomeCard>
           </div>
         </div>

@@ -5,15 +5,14 @@ export default function Document() {
     <Html style={{ background: '#111' }}>
       <Head>
         {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-        <title>Coldplayxtra - Setlist</title>
+        <title>ColdplayXtra - Setlist Maker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="theme-color" content="#111111" />
         <meta property="og:image" content="/meta-preview.png" />
         <meta property="og:title" content="Coldplayxtra - Setlist" />
         <meta
           property="og:description"
-          content="In anticipation of Coldplay`s upcomming Music of the Spheres World Tour, we thought it would be fun to
-              think about what the setlist might look like before big first show in Costa Rica on March 18"
+          content="Build, customize and generate your dream Coldplay setlist to share with friends on social media"
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/home-logo.png" />
