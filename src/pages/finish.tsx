@@ -20,7 +20,6 @@ export default function Finish() {
   const [canShare, setCanShare] = useState(false);
 
   useEffect(() => {
-    console.log(window.navigator.share);
     setCanShare(window.navigator.canShare != undefined);
   }, []);
 

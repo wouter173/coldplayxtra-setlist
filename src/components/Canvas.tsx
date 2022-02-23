@@ -36,7 +36,6 @@ export default function Canvas(props: Props) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const render = () => {
-    console.log('render started');
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d')!;
     const w = 1200;
@@ -89,7 +88,6 @@ export default function Canvas(props: Props) {
     ctx.fillText(content, 0, 0);
 
     props.getData(canvas.toDataURL());
-    console.log('render ended');
   };
 
   const drawUrl = (url: string, widthoffset: number, ctx: CanvasRenderingContext2D, lineoffset: number) => {
@@ -148,7 +146,6 @@ export default function Canvas(props: Props) {
   }, []);
 
   useEffect(() => {
-    console.log({ fontLoaded, imageLoaded });
     if (fontLoaded && imageLoaded) render();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fontLoaded, imageLoaded]);

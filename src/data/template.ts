@@ -24,17 +24,28 @@ export const template = (): stageType[] => [
         name: 'Human Heart',
         customInfo: { values: ['special guest'], other: '', otherVisible: false },
       },
-      { id: GenerateID(), name: 'People of the Pride' },
-      { id: GenerateID(), name: "Everything's Not Lost" },
+      { id: GenerateID(), name: 'Magic' },
     ],
   },
   {
     id: GenerateID(),
     name: 'Main Stage',
     songs: [
-      { id: GenerateID(), name: 'Magic' },
-      { id: GenerateID(), name: 'Yellow', customInfo: { values: ['acoustic'], other: '', otherVisible: false } },
+      { id: GenerateID(), name: 'People Of The Pride' },
+      { id: GenerateID(), name: "Everything's Not Lost" },
       { id: GenerateID(), name: 'My Universe' },
+    ],
+  },
+
+  {
+    id: GenerateID(),
+    name: 'C Stage',
+    songs: [{ id: GenerateID(), name: 'Yellow', customInfo: { values: ['acoustic'], other: '', otherVisible: false } }],
+  },
+  {
+    id: GenerateID(),
+    name: 'Main Stage',
+    songs: [
       { id: GenerateID(), name: 'A Sky Full of Stars' },
       { id: GenerateID(), name: 'Coloratura' },
     ],
