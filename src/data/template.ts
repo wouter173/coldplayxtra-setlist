@@ -32,7 +32,7 @@ export const template = (): stageType[] => [
     id: GenerateID(),
     name: 'Main Stage',
     songs: [
-      { id: GenerateID(), name: 'Magic', customInfo: { values: ['acoustic'], other: '', otherVisible: false } },
+      { id: GenerateID(), name: 'Magic' },
       { id: GenerateID(), name: 'Yellow', customInfo: { values: ['acoustic'], other: '', otherVisible: false } },
       { id: GenerateID(), name: 'My Universe' },
       { id: GenerateID(), name: 'A Sky Full of Stars' },
